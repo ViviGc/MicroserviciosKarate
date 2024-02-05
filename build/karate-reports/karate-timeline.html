@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-2","id":1},{"content":"pool-1-thread-1","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/CustomerManagement\/Customers_owner[1:6]","start":1707097670417,"end":1707097671496,"title":"users\/CustomerManagement\/Customers_owner[1:6] 20:47:50.417-20:47:51.496 CustomersID Owners POST"},{"id":2,"group":2,"content":"users\/CustomerManagement\/Customers_owner[2:24]","start":1707097670908,"end":1707097671801,"title":"users\/CustomerManagement\/Customers_owner[2:24] 20:47:50.908-20:47:51.801 CustomersID Owners GET"},{"id":3,"group":1,"content":"users\/CustomerManagement\/Customers_owner[3:40]","start":1707097671499,"end":1707097672389,"title":"users\/CustomerManagement\/Customers_owner[3:40] 20:47:51.499-20:47:52.389 CustomersID Owners PUT"},{"id":4,"group":2,"content":"users\/CustomerManagement\/Customers_owner[4:59]","start":1707097671803,"end":1707097672703,"title":"users\/CustomerManagement\/Customers_owner[4:59] 20:47:51.803-20:47:52.703 CustomersID Owners GET {ownerID}"},{"id":5,"group":1,"content":"users\/CustomerManagement\/Customers_owner[5:73]","start":1707097672392,"end":1707097673295,"title":"users\/CustomerManagement\/Customers_owner[5:73] 20:47:52.392-20:47:53.295 CustomersID Owners DEL {ownerID}"},{"id":6,"group":2,"content":"users\/CustomerManagement\/Customers[1:6]","start":1707097665759,"end":1707097666947,"title":"users\/CustomerManagement\/Customers[1:6] 20:47:45.759-20:47:46.947 Customers POST"},{"id":7,"group":1,"content":"users\/CustomerManagement\/Customers[2:32]","start":1707097665759,"end":1707097667288,"title":"users\/CustomerManagement\/Customers[2:32] 20:47:45.759-20:47:47.288 Customers GET"},{"id":8,"group":2,"content":"users\/CustomerManagement\/Customers[3:47]","start":1707097666958,"end":1707097667821,"title":"users\/CustomerManagement\/Customers[3:47] 20:47:46.958-20:47:47.821 Customers GET {customerId}"},{"id":9,"group":1,"content":"users\/CustomerManagement\/Customers[4:62]","start":1707097667296,"end":1707097668315,"title":"users\/CustomerManagement\/Customers[4:62] 20:47:47.296-20:47:48.315 Customers PATCH {customerId}"},{"id":10,"group":2,"content":"users\/CustomerManagement\/Customers[5:78]","start":1707097667828,"end":1707097668608,"title":"users\/CustomerManagement\/Customers[5:78] 20:47:47.828-20:47:48.608 Customers PUT {customerId}"},{"id":11,"group":2,"content":"users\/CustomerManagement\/Customers_products[1:7]","start":1707097672706,"end":1707097673509,"title":"users\/CustomerManagement\/Customers_products[1:7] 20:47:52.706-20:47:53.509 Customers GET Products By CustomerID"},{"id":12,"group":1,"content":"users\/CustomerManagement\/Customers_products[2:22]","start":1707097673306,"end":1707097674309,"title":"users\/CustomerManagement\/Customers_products[2:22] 20:47:53.306-20:47:54.309 Customers GET ProductByID"},{"id":13,"group":2,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[1:6]","start":1707097673513,"end":1707097673888,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[1:6] 20:47:53.513-20:47:53.888 CustomerTypeManagement POST"},{"id":14,"group":2,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[2:28]","start":1707097673891,"end":1707097674487,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[2:28] 20:47:53.891-20:47:54.487 CustomerTypeManagement PUT {customerTypeId}"},{"id":15,"group":1,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[3:44]","start":1707097674312,"end":1707097674913,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[3:44] 20:47:54.312-20:47:54.913 CustomerTypeManagement GET {customerTypeId}"},{"id":16,"group":2,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[4:59]","start":1707097674491,"end":1707097674781,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[4:59] 20:47:54.491-20:47:54.781 CustomerTypeManagement GET"},{"id":17,"group":1,"content":"users\/CustomerManagement\/Customers_domains[1:6]","start":1707097668322,"end":1707097669301,"title":"users\/CustomerManagement\/Customers_domains[1:6] 20:47:48.322-20:47:49.301 CustomersID Domains POST"},{"id":18,"group":2,"content":"users\/CustomerManagement\/Customers_domains[2:24]","start":1707097668612,"end":1707097669799,"title":"users\/CustomerManagement\/Customers_domains[2:24] 20:47:48.612-20:47:49.799 CustomersID Domains GET"},{"id":19,"group":1,"content":"users\/CustomerManagement\/Customers_domains[3:40]","start":1707097669305,"end":1707097670413,"title":"users\/CustomerManagement\/Customers_domains[3:40] 20:47:49.305-20:47:50.413 CustomersID Domains PUT"},{"id":20,"group":2,"content":"users\/CustomerManagement\/Customers_domains[4:58]","start":1707097669802,"end":1707097670905,"title":"users\/CustomerManagement\/Customers_domains[4:58] 20:47:49.802-20:47:50.905 CustomersID Domains GET {domains}"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
