@@ -1,6 +1,16 @@
 plugins{
     id 'java'
 }
+task runKarateTest(type: Test) {
+    description = "Run Karate test"
+    group = 'verification'
+    dependsOn testClasses
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+
+
+    include 'users.ManagementTest'
+}
 
 repositories {
     maven{
@@ -20,6 +30,38 @@ test{
     systemProperty "karate.env", System.properties.getProperty("karate.env")
 }
 
+/*ext {
+    testTasks = [
+            'karate': 'src/test/java/users/ManagementTest.java'
+    ]
+}
+
+testTasks.each { taskName, profile ->
+    task "${taskName}Test"(type: Test) {
+        description = "Run ${taskName} regression tests"
+        group = 'verification'
+        systemProperty "environment", "default"
+        useTestNG()
+        include '*Test.'class**/
+/*        options {
+            systemProperties(System.getProperties())
+        }
+        doFirst {
+            project.ext.set('testProfile', profile)
+        }
+    }
+}
+task allRegressionTests(type: Test) {
+    dependsOn testTasks.values()
+}
+task aggregateRegressionReports(type: TestReport) {
+    destinationDir = file("$buildDir/reports/aggregateRegression")
+    def testTaskNames = testTasks.keySet()
+    testTaskNames.each { taskName ->
+        reportOn(tasks["$taskName"])
+    }
+}
+*/
 sourceSets{
     test{
         resources{
