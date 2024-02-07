@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-02-04 08:47:54 PM</div>
+    <div>2024-02-07 10:46:51 a. m.</div>
   </div>        
 </div>
 
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>804</span>
+              <span>ms:</span>&nbsp;<span>655</span>
             </div>
           </div>
           
@@ -82,7 +82,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement/Customers.feature@Microservicios&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">487</div>
+    <div class="time-cell passed">363</div>
   </div>
 
    
@@ -101,7 +101,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">users.CustomerManagement.CustomerManagement.Customers</div>
       </div>
-      <div class="time-cell passed">480</div>
+      <div class="time-cell passed">351</div>
     </div>
     <div>
       <div><div>
@@ -117,7 +117,7 @@
         <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -285,7 +285,7 @@
         <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -313,7 +313,7 @@
         <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -341,7 +341,7 @@
         <span>And</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">477</div>
+    <div class="time-cell passed">342</div>
   </div>
 
    
@@ -350,7 +350,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.18">20:47:52.714 request:
+  <div class="preformatted" data-parent="0.9.0.call.0.18">10:46:49.107 request:
 1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
 1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
 1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
@@ -358,13 +358,13 @@
 1 &gt; Content-Length: 1050
 1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;customerName&quot;:&quot;2185951001032758&quot;,&quot;businessName&quot;:&quot;2185951001032758&quot;,&quot;customerDocumentNumber&quot;:&quot;2185951001032758&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;2185951001032758&quot;,&quot;regulatedSFC&quot;:&quot;2185951001032758&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+{&quot;customerName&quot;:&quot;0728111487528983&quot;,&quot;businessName&quot;:&quot;0728111487528983&quot;,&quot;customerDocumentNumber&quot;:&quot;0728111487528983&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;0728111487528983&quot;,&quot;regulatedSFC&quot;:&quot;0728111487528983&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
 
-20:47:53.190 response time in milliseconds: 476
+10:46:49.444 response time in milliseconds: 337
 1 &lt; 201
-1 &lt; Date: Mon, 05 Feb 2024 01:47:53 GMT
+1 &lt; Date: Wed, 07 Feb 2024 15:46:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -377,7 +377,7 @@
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-04T20:47:53&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34d01049b&quot;,&quot;customerName&quot;:&quot;2185951001032758&quot;,&quot;businessName&quot;:&quot;2185951001032758&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34d0b049d&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;2185951001032758&quot;,&quot;customerCode&quot;:&quot;2185951001032758&quot;,&quot;regulatedSFC&quot;:&quot;2185951001032758&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34d68049f&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-02-04T20:47:52&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-02-04T20:47:52&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-02-04T20:47:52&quot;}}}
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-07T10:46:49&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-844017a00cd9&quot;,&quot;customerName&quot;:&quot;0728111487528983&quot;,&quot;businessName&quot;:&quot;0728111487528983&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a9133aa-8d41-1693-818d-844017ad0cdb&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;0728111487528983&quot;,&quot;customerCode&quot;:&quot;0728111487528983&quot;,&quot;regulatedSFC&quot;:&quot;0728111487528983&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a9133aa-8d41-1693-818d-844017b90cdd&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-02-07T10:46:49&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-02-07T10:46:49&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-02-07T10:46:49&quot;}}}
 
 </div>   
 
@@ -426,7 +426,7 @@
         <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -573,7 +573,7 @@
         <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -582,7 +582,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.26">20:47:53.191 [print] 0a9133aa-8d41-1693-818d-76f34d01049b 
+  <div class="preformatted" data-parent="0.9.0.call.0.26">10:46:49.449 [print] 0a9133aa-8d41-1693-818d-844017a00cd9 
 </div>   
 
   
@@ -602,7 +602,7 @@
         <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -611,7 +611,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.27">20:47:53.191 [print] 0a9133aa-8d41-1693-818d-76f34d0b049d 
+  <div class="preformatted" data-parent="0.9.0.call.0.27">10:46:49.450 [print] 0a9133aa-8d41-1693-818d-844017ad0cdb 
 </div>   
 
   
@@ -631,7 +631,7 @@
         <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -640,7 +640,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.28">20:47:53.191 [print] 0a9133aa-8d41-1693-818d-76f34d68049f 
+  <div class="preformatted" data-parent="0.9.0.call.0.28">10:46:49.451 [print] 0a9133aa-8d41-1693-818d-844017b90cdd 
 </div>   
 
   
@@ -665,7 +665,7 @@
         <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -693,7 +693,7 @@
         <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -833,7 +833,7 @@
         <span>And</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">314</div>
+    <div class="time-cell passed">286</div>
   </div>
 
    
@@ -842,20 +842,20 @@
 
   
 
-  <div class="preformatted" data-parent="0.17">20:47:53.196 request:
-2 &gt; GET https://internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a9133aa-8d41-1693-818d-76f34d01049b/products
+  <div class="preformatted" data-parent="0.17">10:46:49.462 request:
+2 &gt; GET https://internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a9133aa-8d41-1693-818d-844017a00cd9/products
 2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
 2 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
 2 &gt; Content-Type: application/json
 2 &gt; Host: internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-20:47:53.509 response time in milliseconds: 313
+10:46:49.744 response time in milliseconds: 282
 2 &lt; 200
-2 &lt; Date: Mon, 05 Feb 2024 01:47:53 GMT
+2 &lt; Date: Wed, 07 Feb 2024 15:46:49 GMT
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Connection: keep-alive
@@ -868,7 +868,7 @@
 2 &lt; Pragma: no-cache
 2 &lt; Expires: 0
 2 &lt; X-Frame-Options: DENY
-{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-04T20:47:53&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Consult of the products of a Customer successful&quot;},&quot;data&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34d01049b&quot;,&quot;products&quot;:[]}}
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-07T10:46:49&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Consult of the products of a Customer successful&quot;},&quot;data&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-844017a00cd9&quot;,&quot;products&quot;:[]}}
 
 </div>   
 
@@ -946,7 +946,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>996</span>
+              <span>ms:</span>&nbsp;<span>665</span>
             </div>
           </div>
           
@@ -963,7 +963,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement/Customers.feature@Microservicios&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">498</div>
+    <div class="time-cell passed">338</div>
   </div>
 
    
@@ -982,7 +982,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">users.CustomerManagement.CustomerManagement.Customers</div>
       </div>
-      <div class="time-cell passed">471</div>
+      <div class="time-cell passed">323</div>
     </div>
     <div>
       <div><div>
@@ -998,7 +998,7 @@
         <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1026,7 +1026,7 @@
         <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1054,7 +1054,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1166,7 +1166,7 @@
         <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1194,7 +1194,7 @@
         <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1222,7 +1222,7 @@
         <span>And</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">464</div>
+    <div class="time-cell passed">313</div>
   </div>
 
    
@@ -1231,7 +1231,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.24.0.call.0.18">20:47:53.343 request:
+  <div class="preformatted" data-parent="0.24.0.call.0.18">10:46:49.718 request:
 1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
 1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
 1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
@@ -1239,13 +1239,13 @@
 1 &gt; Content-Length: 1050
 1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;customerName&quot;:&quot;1181237036517487&quot;,&quot;businessName&quot;:&quot;1181237036517487&quot;,&quot;customerDocumentNumber&quot;:&quot;1181237036517487&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;1181237036517487&quot;,&quot;regulatedSFC&quot;:&quot;1181237036517487&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+{&quot;customerName&quot;:&quot;5251037247548602&quot;,&quot;businessName&quot;:&quot;5251037247548602&quot;,&quot;customerDocumentNumber&quot;:&quot;5251037247548602&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;5251037247548602&quot;,&quot;regulatedSFC&quot;:&quot;5251037247548602&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
 
-20:47:53.806 response time in milliseconds: 462
+10:46:50.028 response time in milliseconds: 308
 1 &lt; 201
-1 &lt; Date: Mon, 05 Feb 2024 01:47:53 GMT
+1 &lt; Date: Wed, 07 Feb 2024 15:46:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1258,7 +1258,7 @@
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-04T20:47:53&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34fad04a0&quot;,&quot;customerName&quot;:&quot;1181237036517487&quot;,&quot;businessName&quot;:&quot;1181237036517487&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a9133aa-8d41-1693-818d-76f34fbd04a2&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;1181237036517487&quot;,&quot;customerCode&quot;:&quot;1181237036517487&quot;,&quot;regulatedSFC&quot;:&quot;1181237036517487&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a9133aa-8d41-1693-818d-76f3501a04a4&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-02-04T20:47:53&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-02-04T20:47:53&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-02-04T20:47:53&quot;}}}
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-07T10:46:49&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a9133aa-8d41-1693-818d-844019ef0cde&quot;,&quot;customerName&quot;:&quot;5251037247548602&quot;,&quot;businessName&quot;:&quot;5251037247548602&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a9133aa-8d41-1693-818d-844019f90ce0&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5251037247548602&quot;,&quot;customerCode&quot;:&quot;5251037247548602&quot;,&quot;regulatedSFC&quot;:&quot;5251037247548602&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a9133aa-8d41-1693-818d-84401a050ce2&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-02-07T10:46:49&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-02-07T10:46:49&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-02-07T10:46:49&quot;}}}
 
 </div>   
 
@@ -1463,7 +1463,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.24.0.call.0.26">20:47:53.807 [print] 0a9133aa-8d41-1693-818d-76f34fad04a0 
+  <div class="preformatted" data-parent="0.24.0.call.0.26">10:46:50.030 [print] 0a9133aa-8d41-1693-818d-844019ef0cde 
 </div>   
 
   
@@ -1492,7 +1492,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.24.0.call.0.27">20:47:53.809 [print] 0a9133aa-8d41-1693-818d-76f34fbd04a2 
+  <div class="preformatted" data-parent="0.24.0.call.0.27">10:46:50.031 [print] 0a9133aa-8d41-1693-818d-844019f90ce0 
 </div>   
 
   
@@ -1512,7 +1512,7 @@
         <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1521,7 +1521,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.24.0.call.0.28">20:47:53.810 [print] 0a9133aa-8d41-1693-818d-76f3501a04a4 
+  <div class="preformatted" data-parent="0.24.0.call.0.28">10:46:50.032 [print] 0a9133aa-8d41-1693-818d-84401a050ce2 
 </div>   
 
   
@@ -1546,7 +1546,7 @@
         <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1602,7 +1602,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a91337e-8c88-1ce7-818c-b2785f9f00c3/products/0a9134fb-8ccc-1191-818c-d138bfa10000&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1714,7 +1714,7 @@
         <span>And</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">496</div>
+    <div class="time-cell passed">320</div>
   </div>
 
    
@@ -1723,20 +1723,20 @@
 
   
 
-  <div class="preformatted" data-parent="0.32">20:47:53.814 request:
+  <div class="preformatted" data-parent="0.32">10:46:50.041 request:
 2 &gt; GET https://internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a91337e-8c88-1ce7-818c-b2785f9f00c3/products/0a9134fb-8ccc-1191-818c-d138bfa10000
 2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
 2 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
 2 &gt; Content-Type: application/json
 2 &gt; Host: internal-aws-prb-alb-back-398488634.us-east-1.elb.amazonaws.com
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_382)
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-20:47:54.308 response time in milliseconds: 494
+10:46:50.359 response time in milliseconds: 318
 2 &lt; 200
-2 &lt; Date: Mon, 05 Feb 2024 01:47:54 GMT
+2 &lt; Date: Wed, 07 Feb 2024 15:46:50 GMT
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Connection: keep-alive
@@ -1749,7 +1749,7 @@
 2 &lt; Pragma: no-cache
 2 &lt; Expires: 0
 2 &lt; X-Frame-Options: DENY
-{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-04T20:47:54&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;&quot;},&quot;data&quot;:{&quot;customerId&quot;:&quot;0a91337e-8c88-1ce7-818c-b2785f9f00c3&quot;,&quot;products&quot;:{&quot;productId&quot;:&quot;0a9134fb-8ccc-1191-818c-d138bfa10000&quot;,&quot;productName&quot;:&quot;tdc_098325454233344342&quot;,&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133bb-8ccc-1e3e-818c-d13929b40000&quot;,&quot;subscriptionName&quot;:&quot;Some kilo1&quot;},&quot;supportCustomerType&quot;:[&quot;AV VILLAS&quot;],&quot;createDatetime&quot;:&quot;2024-01-03T16:26:46&quot;}}}
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-02-07T10:46:50&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;&quot;},&quot;data&quot;:{&quot;customerId&quot;:&quot;0a91337e-8c88-1ce7-818c-b2785f9f00c3&quot;,&quot;products&quot;:{&quot;productId&quot;:&quot;0a9134fb-8ccc-1191-818c-d138bfa10000&quot;,&quot;productName&quot;:&quot;tdc_098325454233344342&quot;,&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133bb-8ccc-1e3e-818c-d13929b40000&quot;,&quot;subscriptionName&quot;:&quot;Some kilo1&quot;},&quot;supportCustomerType&quot;:[&quot;AV VILLAS&quot;],&quot;createDatetime&quot;:&quot;2024-01-03T16:26:46&quot;}}}
 
 </div>   
 
@@ -1798,7 +1798,7 @@
         <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
