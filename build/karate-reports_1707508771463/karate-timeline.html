@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/ProductManager\/CustomersCommonsProducts[1:7]","start":1707508592599,"end":1707508593866,"title":"users\/ProductManager\/CustomersCommonsProducts[1:7] 14:56:32.599-14:56:33.866 Customers POST"},{"id":2,"group":2,"content":"users\/ProductManager\/CustomersCommonsProducts[3:48]","start":1707508592599,"end":1707508594306,"title":"users\/ProductManager\/CustomersCommonsProducts[3:48] 14:56:32.599-14:56:34.306 Customers GET {customerId}"},{"id":3,"group":1,"content":"users\/ProductManager\/CustomersCommonsProducts[4:63]","start":1707508593871,"end":1707508594675,"title":"users\/ProductManager\/CustomersCommonsProducts[4:63] 14:56:33.871-14:56:34.675 Customers PATCH {customerId}"},{"id":4,"group":2,"content":"users\/ProductManager\/CustomersCommonsProducts[5:79]","start":1707508594322,"end":1707508595007,"title":"users\/ProductManager\/CustomersCommonsProducts[5:79] 14:56:34.322-14:56:35.007 Customers PUT {customerId}"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

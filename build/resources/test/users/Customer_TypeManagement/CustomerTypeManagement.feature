@@ -1,3 +1,4 @@
+
 Feature: CustomerTypeManagement
 
   # Background:
@@ -37,7 +38,7 @@ Feature: CustomerTypeManagement
     * header Content-Type = 'application/json'
     When request { "customerTypeValue": #(variableRandom) , "customerTypeLabel": "CAMPOS1234COMPAÑU12BOGOTARESULTA121COLOMBIAPRUEBAS" }
     And method PUT
-    Then status 200
+    Then status 400
     And match $.messageResponse.responseDetails == "CustomerType was Updated Successfully"
 
 

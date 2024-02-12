@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[1:6]","start":1707428626014,"end":1707428627833,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[1:6] 16:43:46.014-16:43:47.833 CustomerTypeManagement POST"},{"id":2,"group":2,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[2:28]","start":1707428626012,"end":1707428628158,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[2:28] 16:43:46.012-16:43:48.158 CustomerTypeManagement PUT {customerTypeId}"},{"id":3,"group":1,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[3:44]","start":1707428627846,"end":1707428628494,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[3:44] 16:43:47.846-16:43:48.494 CustomerTypeManagement GET {customerTypeId}"},{"id":4,"group":2,"content":"users\/Customer_TypeManagement\/CustomerTypeManagement[4:59]","start":1707428628165,"end":1707428628460,"title":"users\/Customer_TypeManagement\/CustomerTypeManagement[4:59] 16:43:48.165-16:43:48.460 CustomerTypeManagement GET"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

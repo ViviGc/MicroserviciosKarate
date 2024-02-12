@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/ProductManager\/CustomersCommonsProducts[1:7]","start":1707746438327,"end":1707746522912,"title":"users\/ProductManager\/CustomersCommonsProducts[1:7] 09:00:38.327-09:02:02.912 Customers POST","className":"failed"},{"id":2,"group":2,"content":"users\/ProductManager\/CustomersCommonsProducts[2:36]","start":1707746438327,"end":1707746522911,"title":"users\/ProductManager\/CustomersCommonsProducts[2:36] 09:00:38.327-09:02:02.911 Customers GET","className":"failed"},{"id":3,"group":1,"content":"users\/ProductManager\/CustomersCommonsProducts[3:50]","start":1707746522922,"end":1707746522955,"title":"users\/ProductManager\/CustomersCommonsProducts[3:50] 09:02:02.922-09:02:02.955 Customers GET {customerId}","className":"failed"},{"id":4,"group":2,"content":"users\/ProductManager\/CustomersCommonsProducts[4:65]","start":1707746522922,"end":1707746607152,"title":"users\/ProductManager\/CustomersCommonsProducts[4:65] 09:02:02.922-09:03:27.152 Customers PATCH {customerId}","className":"failed"},{"id":5,"group":1,"content":"users\/ProductManager\/CustomersCommonsProducts[5:81]","start":1707746522962,"end":1707746607138,"title":"users\/ProductManager\/CustomersCommonsProducts[5:81] 09:02:02.962-09:03:27.138 Customers PUT {customerId}","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
