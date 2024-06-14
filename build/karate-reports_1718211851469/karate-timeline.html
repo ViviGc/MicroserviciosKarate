@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[1:7]","start":1718211766602,"end":1718211770251,"title":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[1:7] 12:02:46.602-12:02:50.251 SubscriptionBusinessAccounts POST"},{"id":2,"group":2,"content":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[2:27]","start":1718211766603,"end":1718211770370,"title":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[2:27] 12:02:46.603-12:02:50.370 SubscriptionBusinessAccounts GET"},{"id":3,"group":1,"content":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[3:42]","start":1718211770256,"end":1718211773117,"title":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[3:42] 12:02:50.256-12:02:53.117 SubscriptionBusinessAccounts GETID {BusinessId}"},{"id":4,"group":2,"content":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[4:56]","start":1718211770375,"end":1718211773301,"title":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[4:56] 12:02:50.375-12:02:53.301 SubscriptionBusinessAccounts PUT {BusinessId}"},{"id":5,"group":1,"content":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[5:71]","start":1718211773120,"end":1718211776214,"title":"users\/SubscriptionManagement04\/Subscriptions_Business_Accounts[5:71] 12:02:53.120-12:02:56.214 SubscriptionBusinessAccounts DellID {BusinessId}","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

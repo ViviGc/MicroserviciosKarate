@@ -1,0 +1,4557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>users.SubscriptionManagement04.SubscriptionsAccounts</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-06-07 05:07:28 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>SubscriptionAccounts POST</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:55]"><span>[2:55]</span> <span>Products PUT {productId}</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">users/SubscriptionManagement04/SubscriptionsAccounts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Customer</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Microservicios</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">SubscriptionAccounts POST</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3430</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerAccountManagement03/CustomersCustomerIdAccounts.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2102</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.11.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.SubscriptionManagement04.CustomerAccountManagement03.CustomersCustomerIdAccounts</div>
+      </div>
+      <div class="time-cell passed">2080</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1696</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.11.0.call">
+      <div class="step-container" id="0.11.0.call.0.11.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.SubscriptionManagement04.CustomerManagement01.Customers</div>
+      </div>
+      <div class="time-cell passed">1676</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1603</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.11.0.call.0.19">17:07:24.952 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;0728682251666155&quot;,&quot;businessName&quot;:&quot;0728682251666155&quot;,&quot;customerDocumentNumber&quot;:&quot;0728682251666155&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;0728682251666155&quot;,&quot;regulatedSFC&quot;:&quot;0728682251666155&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+17:07:26.443 response time in milliseconds: 1489
+1 &lt; 201
+1 &lt; Date: Fri, 07 Jun 2024 22:07:26 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:26&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0a87032a&quot;,&quot;customerName&quot;:&quot;0728682251666155&quot;,&quot;businessName&quot;:&quot;0728682251666155&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0a96032c&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;0728682251666155&quot;,&quot;customerCode&quot;:&quot;0728682251666155&quot;,&quot;regulatedSFC&quot;:&quot;0728682251666155&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0aa7032e&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;groupId&quot;:&quot;775e9532-e8cb-4e76-9d4a-ce2abcdb5c8d&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.11.0.call.0.27">17:07:26.461 [print] 0a913355-8fcb-197f-818f-f4be0a87032a 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.11.0.call.0.28">17:07:26.463 [print] 0a913355-8fcb-197f-818f-f4be0a96032c 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call.0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.11.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.11.0.call.0.29">17:07:26.464 [print] 0a913355-8fcb-197f-818f-f4be0aa7032e 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;accountType&quot;: #(variableRandom),&quot;accountNumber&quot;: #(variableRandom),&quot;accountName&quot;: #(variableRandom), &quot;accountCode&quot;: &quot;99939&quot;,&quot;financialInstitutionCode&quot;: &quot;8730&quot;,&quot;expirationDatetime&quot;: &quot;2023-03-01T20:00:00&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">367</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.19">17:07:26.479 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0a87032a/accounts
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 201
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountType&quot;:&quot;0072011866459911&quot;,&quot;accountNumber&quot;:&quot;0072011866459911&quot;,&quot;accountName&quot;:&quot;0072011866459911&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}
+
+17:07:26.844 response time in milliseconds: 365
+2 &lt; 201
+2 &lt; Date: Fri, 07 Jun 2024 22:07:26 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;requestDateTime&quot;:&quot;2024-06-07T17:07:26&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account created, success.&quot;},&quot;data&quot;:{&quot;account&quot;:{&quot;accountId&quot;:&quot;993f28b2-9967-4e56-a491-3e22a965a1fa&quot;,&quot;accountType&quot;:&quot;0072011866459911&quot;,&quot;accountNumber&quot;:&quot;0072011866459911&quot;,&quot;accountName&quot;:&quot;0072011866459911&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:26&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;,&quot;approvalDatetime&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Account created, success.&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = $.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def account = data.account</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accountId = account.accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.25">17:07:26.850 [print] 993f28b2-9967-4e56-a491-3e22a965a1fa 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.26">
+      <div class="step-ref passed">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariableaccountId = accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;accountType&quot;: #(variableRandom),&quot;accountNumber&quot;: #(variableRandom),&quot;accountName&quot;: #(variableRandom), &quot;accountCode&quot;: &quot;99939&quot;,&quot;financialInstitutionCode&quot;: &quot;8730&quot;,&quot;expirationDatetime&quot;: &quot;2023-03-01T20:00:00&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">359</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">17:07:26.856 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0a87032a/accounts
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 201
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountType&quot;:&quot;3138929028872574&quot;,&quot;accountNumber&quot;:&quot;3138929028872574&quot;,&quot;accountName&quot;:&quot;3138929028872574&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}
+
+17:07:27.212 response time in milliseconds: 356
+3 &lt; 201
+3 &lt; Date: Fri, 07 Jun 2024 22:07:27 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;requestDateTime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account created, success.&quot;},&quot;data&quot;:{&quot;account&quot;:{&quot;accountId&quot;:&quot;9f0d8a11-63e4-4786-b0e3-cd8200b3959c&quot;,&quot;accountType&quot;:&quot;3138929028872574&quot;,&quot;accountNumber&quot;:&quot;3138929028872574&quot;,&quot;accountName&quot;:&quot;3138929028872574&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;,&quot;approvalDatetime&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Account created, success.&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = $.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def account = data.account</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accountId = account.accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">17:07:27.219 [print] 9f0d8a11-63e4-4786-b0e3-cd8200b3959c 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariableaccountId = accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/subscriptions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">418</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">17:07:27.223 request:
+4 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0a87032a/subscriptions
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 482
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+17:07:27.639 response time in milliseconds: 415
+4 &lt; 201
+4 &lt; Date: Fri, 07 Jun 2024 22:07:27 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:27&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0f50012c&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0a87032a&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0f5b012d&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0f50012c&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0f5b012e&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0f50012c&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">17:07:27.641 [print] 0a913355-8fcb-197f-818f-f4be0a87032a 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablesubscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">17:07:27.643 [print] 0a9133a6-8f4e-17ca-818f-f4be0f50012c 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/subscriptions/&#39; + capturarVariablesubscriptionId + &#39;/accounts/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;accountId&quot;: #(capturarVariableaccountId) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">412</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">17:07:27.646 request:
+5 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0a87032a/subscriptions/0a9133a6-8f4e-17ca-818f-f4be0f50012c/accounts/
+5 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 52
+5 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountId&quot;:&quot;9f0d8a11-63e4-4786-b0e3-cd8200b3959c&quot;}
+
+17:07:28.056 response time in milliseconds: 409
+5 &lt; 201
+5 &lt; Date: Fri, 07 Jun 2024 22:07:28 GMT
+5 &lt; Content-Type: application/json
+5 &lt; Transfer-Encoding: chunked
+5 &lt; Connection: keep-alive
+5 &lt; Vary: Origin
+5 &lt; Vary: Access-Control-Request-Method
+5 &lt; Vary: Access-Control-Request-Headers
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-XSS-Protection: 1; mode=block
+5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+5 &lt; Pragma: no-cache
+5 &lt; Expires: 0
+5 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:27&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;account&quot;:{&quot;accountId&quot;:&quot;9f0d8a11-63e4-4786-b0e3-cd8200b3959c&quot;,&quot;accountType&quot;:&quot;3138929028872574&quot;,&quot;accountNumber&quot;:&quot;3138929028872574&quot;,&quot;accountName&quot;:&quot;3138929028872574&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">17:07:28.058 [print] 0a913355-8fcb-197f-818f-f4be0a87032a 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablesubscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">17:07:28.060 [print] #notpresent 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariableaccountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.52">17:07:28.061 [print] 9f0d8a11-63e4-4786-b0e3-cd8200b3959c 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:55]</span>
+                <span class="scenario-name">Products PUT {productId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3584</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerAccountManagement03/CustomersCustomerIdAccounts.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2224</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.59.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.SubscriptionManagement04.CustomerAccountManagement03.CustomersCustomerIdAccounts</div>
+      </div>
+      <div class="time-cell passed">2200</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1843</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.59.0.call">
+      <div class="step-container" id="0.59.0.call.0.11.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.SubscriptionManagement04.CustomerManagement01.Customers</div>
+      </div>
+      <div class="time-cell passed">1823</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1761</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.11.0.call.0.19">17:07:24.952 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;0629846872131598&quot;,&quot;businessName&quot;:&quot;0629846872131598&quot;,&quot;customerDocumentNumber&quot;:&quot;0629846872131598&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;0629846872131598&quot;,&quot;regulatedSFC&quot;:&quot;0629846872131598&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+17:07:26.603 response time in milliseconds: 1650
+1 &lt; 201
+1 &lt; Date: Fri, 07 Jun 2024 22:07:26 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:26&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0b2c032f&quot;,&quot;customerName&quot;:&quot;0629846872131598&quot;,&quot;businessName&quot;:&quot;0629846872131598&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0b3b0331&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;0629846872131598&quot;,&quot;customerCode&quot;:&quot;0629846872131598&quot;,&quot;regulatedSFC&quot;:&quot;0629846872131598&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0b4f0333&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-07T17:07:25&quot;,&quot;groupId&quot;:&quot;263a000a-1351-424f-bff9-84378b77e449&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.11.0.call.0.27">17:07:26.610 [print] 0a913355-8fcb-197f-818f-f4be0b2c032f 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.11.0.call.0.28">17:07:26.611 [print] 0a913355-8fcb-197f-818f-f4be0b3b0331 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call.0.11.0.call">
+    <div class="step-container" id="0.59.0.call.0.11.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.11.0.call.0.29">17:07:26.612 [print] 0a913355-8fcb-197f-818f-f4be0b4f0333 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;accountType&quot;: #(variableRandom),&quot;accountNumber&quot;: #(variableRandom),&quot;accountName&quot;: #(variableRandom), &quot;accountCode&quot;: &quot;99939&quot;,&quot;financialInstitutionCode&quot;: &quot;8730&quot;,&quot;expirationDatetime&quot;: &quot;2023-03-01T20:00:00&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">350</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.19">17:07:26.621 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0b2c032f/accounts
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 201
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountType&quot;:&quot;0199890952306559&quot;,&quot;accountNumber&quot;:&quot;0199890952306559&quot;,&quot;accountName&quot;:&quot;0199890952306559&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}
+
+17:07:26.967 response time in milliseconds: 346
+2 &lt; 201
+2 &lt; Date: Fri, 07 Jun 2024 22:07:26 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;requestDateTime&quot;:&quot;2024-06-07T17:07:26&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account created, success.&quot;},&quot;data&quot;:{&quot;account&quot;:{&quot;accountId&quot;:&quot;574debf6-9ea6-4775-9638-49c12b8a661c&quot;,&quot;accountType&quot;:&quot;0199890952306559&quot;,&quot;accountNumber&quot;:&quot;0199890952306559&quot;,&quot;accountName&quot;:&quot;0199890952306559&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:26&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;,&quot;approvalDatetime&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Account created, success.&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = $.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def account = data.account</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accountId = account.accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59.0.call.0.25">17:07:26.971 [print] 574debf6-9ea6-4775-9638-49c12b8a661c 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.59.0.call">
+    <div class="step-container" id="0.59.0.call.0.26">
+      <div class="step-ref passed">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariableaccountId = accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;accountType&quot;: #(variableRandom),&quot;accountNumber&quot;: #(variableRandom),&quot;accountName&quot;: #(variableRandom), &quot;accountCode&quot;: &quot;99939&quot;,&quot;financialInstitutionCode&quot;: &quot;8730&quot;,&quot;expirationDatetime&quot;: &quot;2023-03-01T20:00:00&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">353</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">17:07:26.976 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0b2c032f/accounts
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 201
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountType&quot;:&quot;5284344106197337&quot;,&quot;accountNumber&quot;:&quot;5284344106197337&quot;,&quot;accountName&quot;:&quot;5284344106197337&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}
+
+17:07:27.328 response time in milliseconds: 351
+3 &lt; 201
+3 &lt; Date: Fri, 07 Jun 2024 22:07:27 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;requestDateTime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account created, success.&quot;},&quot;data&quot;:{&quot;account&quot;:{&quot;accountId&quot;:&quot;5ea3e05c-1bc0-4aa7-a53a-a0b2ab2e6615&quot;,&quot;accountType&quot;:&quot;5284344106197337&quot;,&quot;accountNumber&quot;:&quot;5284344106197337&quot;,&quot;accountName&quot;:&quot;5284344106197337&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;,&quot;approvalDatetime&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Account created, success.&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = $.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def account = data.account</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accountId = account.accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.72">17:07:27.331 [print] 5ea3e05c-1bc0-4aa7-a53a-a0b2ab2e6615 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariableaccountId = accountId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/subscriptions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">418</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.82">17:07:27.337 request:
+4 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0b2c032f/subscriptions
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 482
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+17:07:27.753 response time in milliseconds: 416
+4 &lt; 201
+4 &lt; Date: Fri, 07 Jun 2024 22:07:27 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:27&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0fbd012f&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-f4be0b2c032f&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0fcc0130&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0fbd012f&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0fcc0131&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-818f-f4be0fbd012f&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.85">17:07:27.755 [print] 0a913355-8fcb-197f-818f-f4be0b2c032f 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablesubscriptionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">17:07:27.756 [print] 0a9133a6-8f4e-17ca-818f-f4be0fbd012f 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/subscriptions/&#39; + capturarVariablesubscriptionId + &#39;/accounts/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;accounts&quot;: [ { &quot;accountId&quot;: #(capturarVariableaccountId) } ] }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">454</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.97">17:07:27.760 request:
+5 &gt; PUT https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-818f-f4be0b2c032f/subscriptions/0a9133a6-8f4e-17ca-818f-f4be0fbd012f/accounts/
+5 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+5 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 67
+5 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;accounts&quot;:[{&quot;accountId&quot;:&quot;5ea3e05c-1bc0-4aa7-a53a-a0b2ab2e6615&quot;}]}
+
+17:07:28.212 response time in milliseconds: 451
+5 &lt; 200
+5 &lt; Date: Fri, 07 Jun 2024 22:07:28 GMT
+5 &lt; Content-Type: application/json
+5 &lt; Transfer-Encoding: chunked
+5 &lt; Connection: keep-alive
+5 &lt; Vary: Origin
+5 &lt; Vary: Access-Control-Request-Method
+5 &lt; Vary: Access-Control-Request-Headers
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-XSS-Protection: 1; mode=block
+5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+5 &lt; Pragma: no-cache
+5 &lt; Expires: 0
+5 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-07T17:07:28&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Accounts updated on the Subscription successfully&quot;},&quot;data&quot;:{&quot;accounts&quot;:[{&quot;accountId&quot;:&quot;5ea3e05c-1bc0-4aa7-a53a-a0b2ab2e6615&quot;,&quot;accountType&quot;:&quot;5284344106197337&quot;,&quot;accountNumber&quot;:&quot;5284344106197337&quot;,&quot;accountName&quot;:&quot;5284344106197337&quot;,&quot;accountCode&quot;:&quot;99939&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;financialInstitutionCode&quot;:&quot;8730&quot;,&quot;approvalState&quot;:&quot;PENDING&quot;,&quot;createdDatetime&quot;:&quot;2024-06-07T17:07:27&quot;,&quot;expirationDatetime&quot;:&quot;2023-03-01T20:00:00&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Accounts updated on the Subscription successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

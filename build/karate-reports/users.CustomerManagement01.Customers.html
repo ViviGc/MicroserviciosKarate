@@ -1,0 +1,3656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>users.CustomerManagement01.Customers</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-06-14 11:25:02 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Customers POST</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:33]"><span>[2:33]</span> <span>Customers GET</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:48]"><span>[3:48]</span> <span>Customers GET {customerId}</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:63]"><span>[4:63]</span> <span>Customers PATCH {customerId}</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:79]"><span>[5:79]</span> <span>Customers PUT {customerId}</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">users/CustomerManagement01/Customers.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Customer</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Microservicios</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Customers POST</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1595</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1590</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">11:24:55.363 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;4780684543214762&quot;,&quot;businessName&quot;:&quot;4780684543214762&quot;,&quot;customerDocumentNumber&quot;:&quot;4780684543214762&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;4780684543214762&quot;,&quot;regulatedSFC&quot;:&quot;4780684543214762&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+11:24:56.951 response time in milliseconds: 1587
+1 &lt; 201
+1 &lt; Date: Fri, 14 Jun 2024 16:24:56 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:24:56&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-1790fec607ea&quot;,&quot;customerName&quot;:&quot;4780684543214762&quot;,&quot;businessName&quot;:&quot;4780684543214762&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-1790fed507ec&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;4780684543214762&quot;,&quot;customerCode&quot;:&quot;4780684543214762&quot;,&quot;regulatedSFC&quot;:&quot;4780684543214762&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-1790fee707ee&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:24:55&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:24:55&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:24:55&quot;,&quot;groupId&quot;:&quot;9ea7c749-f656-4f6b-b733-54c57f361a06&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">11:24:56.954 [print] 0a913355-8fcb-197f-8190-1790fec607ea 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">11:24:56.954 [print] 0a913355-8fcb-197f-8190-1790fed507ec 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">11:24:56.954 [print] 0a913355-8fcb-197f-8190-1790fee707ee 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:33]</span>
+                <span class="scenario-name">Customers GET</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1455</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { pageSize: 10, pageNumber: 1 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1454</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">11:24:56.958 request:
+1 &gt; GET https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers?pageNumber=1&amp;pageSize=10
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:24:58.410 response time in milliseconds: 1447
+1 &lt; 200
+1 &lt; Date: Fri, 14 Jun 2024 16:24:58 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:24:58&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer exists&quot;},&quot;data&quot;:{&quot;customers&quot;:[{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-cb1cc7b40000&quot;,&quot;customerName&quot;:&quot;Claro Colombia&quot;,&quot;businessName&quot;:&quot;ab1fe5f5-0c44-4dce-a055-abeedd176b82&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-cb1cc8970002&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;91e84d8f-f240-47dd-b86d-d8be16fec4d9&quot;,&quot;customerCode&quot;:&quot;476ed35a-a14f-46ca-91a3-d6201e8f6a26&quot;,&quot;regulatedSFC&quot;:&quot;987111&quot;,&quot;logo&quot;:&quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEh&quot;,&quot;incomes&quot;:&quot;872727222&quot;,&quot;expenses&quot;:&quot;41717111&quot;,&quot;assets&quot;:&quot;12211111&quot;,&quot;passives&quot;:&quot;3901111&quot;,&quot;equity&quot;:&quot;567890&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91335c-8c6e-1435-818c-7da122e4003f&quot;,&quot;customerTypeValue&quot;:&quot;COMPANYPOST123COMCO&quot;,&quot;customerTypeLabel&quot;:&quot;Para pruebas&quot;}],&quot;customerStatus&quot;:&quot;INACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;admin@clarocolombia.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-cb1cc92f0004&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;R 1.2.1&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;R 1.2.1&quot;,&quot;policyDatetime&quot;:&quot;2024-05-30T15:06:45&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-05-30T15:06:45&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;123456789&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-05-30T15:16:55&quot;,&quot;groupId&quot;:&quot;b19fc499-ad7c-442c-8170-4bf0fe6cef71&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-cb27fdb10008&quot;,&quot;customerName&quot;:&quot;91bf9375-c6d5-473a-ba1d-70d28a3dfe74&quot;,&quot;businessName&quot;:&quot;5fad9fa8-e0d8-45f7-be22-1c904c01a4ff&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-cb27fdcc000a&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;3dbda014-02f5-43b7-8023-397538bf86f2&quot;,&quot;customerCode&quot;:&quot;96ea1cdc-cc62-4932-9da7-3e6d3cd0538d&quot;,&quot;regulatedSFC&quot;:&quot;7b9d5ad2-b772-4d1d-ae16-b1b161aa94ad&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-cb285413000d&quot;,&quot;name&quot;:&quot;Juanito Perez4&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;12345687&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-05-30T15:19:05&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-05-30T15:19:05&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-05-30T15:19:05&quot;,&quot;groupId&quot;:&quot;d697e40e-2924-4813-9cd9-0cde9b520e7f&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-cb389d7f0014&quot;,&quot;customerName&quot;:&quot;7a7c1a28-1393-4157-ae2b-afcc2c4393e5&quot;,&quot;businessName&quot;:&quot;a8fbe55e-af02-4339-8354-cf46b418e8a5&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-cb389dac0016&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;edbf419d-a774-4944-a884-75260659ec83&quot;,&quot;customerCode&quot;:&quot;f9c5cdfb-574d-49da-ba99-469ec7a894e2&quot;,&quot;regulatedSFC&quot;:&quot;4c827fab-46d4-496d-b815-0a4f431689a6&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-cb389e020018&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-05-30T15:37:14&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-05-30T15:37:14&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-05-30T15:37:14&quot;,&quot;groupId&quot;:&quot;e87bb434-b7b3-48d0-8bb6-ee75aab61c64&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-cb38ad930019&quot;,&quot;customerName&quot;:&quot;3dec87a0-2ac8-4294-8a30-1d8366688f84&quot;,&quot;businessName&quot;:&quot;594823f3-482a-40e4-8a88-ec6ccb70b5e0&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-cb38ada3001b&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;2e24b0f1-0f6c-4c51-a741-9a9865b37404&quot;,&quot;customerCode&quot;:&quot;0883880d-3af2-4c13-b374-9be2116599e1&quot;,&quot;regulatedSFC&quot;:&quot;845db214-60e4-4d98-93cc-b26eefaed944&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-cb38adb6001d&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-05-30T15:37:18&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-05-30T15:37:18&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-05-30T15:37:18&quot;,&quot;groupId&quot;:&quot;72ac630c-f6b0-4f71-b71e-7aa59b76fcf2&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-cec9ce15001e&quot;,&quot;customerName&quot;:&quot;ef8d2b05-c0ba-43c9-a3b8-11b460247bcb&quot;,&quot;businessName&quot;:&quot;b7d54d6e-6d59-4b2c-a518-66c9bd6f3b11&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-cec9ce560020&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5a27acd4-8554-41fa-af50-b2809654af18&quot;,&quot;customerCode&quot;:&quot;1339146d-9379-4c6d-b387-f4a4aa844da9&quot;,&quot;regulatedSFC&quot;:&quot;520b4ded-8f00-411b-bd09-8dead7e3fedc&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-cec9cea60022&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-05-31T08:14:41&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-05-31T08:14:41&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-05-31T08:14:41&quot;,&quot;groupId&quot;:&quot;caf1746c-9144-4aba-93a1-471166fb041d&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-e8992aa70026&quot;,&quot;customerName&quot;:&quot;5263604878396224&quot;,&quot;businessName&quot;:&quot;5263604878396224&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e8992ac90028&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5263604878396224&quot;,&quot;customerCode&quot;:&quot;5263604878396224&quot;,&quot;regulatedSFC&quot;:&quot;5263604878396224&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-e8992aea002a&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-05T08:31:41&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-05T08:31:41&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-05T08:31:41&quot;,&quot;groupId&quot;:&quot;d8a07b10-9a7f-4e02-84c9-28c7a6e92f56&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-e89930cb002b&quot;,&quot;customerName&quot;:&quot;4367682289360120&quot;,&quot;businessName&quot;:&quot;4367682289360120&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e89930e6002d&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;4367682289360120&quot;,&quot;customerCode&quot;:&quot;4367682289360120&quot;,&quot;regulatedSFC&quot;:&quot;4367682289360120&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-e89930fb002f&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-05T08:31:43&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-05T08:31:43&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-05T08:31:43&quot;,&quot;groupId&quot;:&quot;04d965f3-7664-49eb-92db-e592f90c53f1&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-e89931370030&quot;,&quot;customerName&quot;:&quot;Claro Colombia&quot;,&quot;businessName&quot;:&quot;0111486078362826&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e89931510032&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;0111486078362826&quot;,&quot;customerCode&quot;:&quot;0111486078362826&quot;,&quot;regulatedSFC&quot;:&quot;987111&quot;,&quot;logo&quot;:&quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEh&quot;,&quot;incomes&quot;:&quot;872727222&quot;,&quot;expenses&quot;:&quot;41717111&quot;,&quot;assets&quot;:&quot;12211111&quot;,&quot;passives&quot;:&quot;3901111&quot;,&quot;equity&quot;:&quot;567890&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91335c-8c6e-1435-818c-7da122e4003f&quot;,&quot;customerTypeValue&quot;:&quot;COMPANYPOST123COMCO&quot;,&quot;customerTypeLabel&quot;:&quot;Para pruebas&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;admin@clarocolombia.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-e89931820034&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;R 1.2.1&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;R 1.2.1&quot;,&quot;policyDatetime&quot;:&quot;2024-06-05T08:31:43&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-05T08:31:43&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;123456789&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;groupId&quot;:&quot;b42e20ee-364d-4998-a119-dc08a4b34217&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-e89938180037&quot;,&quot;customerName&quot;:&quot;4047682506887626&quot;,&quot;businessName&quot;:&quot;4047682506887626&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e899382f0039&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;4047682506887626&quot;,&quot;customerCode&quot;:&quot;4047682506887626&quot;,&quot;regulatedSFC&quot;:&quot;4047682506887626&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;INACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-e899384a003b&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-05T08:31:46&quot;,&quot;groupId&quot;:&quot;3b420661-9993-4a5a-98bd-9893910b5264&quot;},{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-818f-e8993923003c&quot;,&quot;customerName&quot;:&quot;5871356702841780&quot;,&quot;businessName&quot;:&quot;5871356702841780&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e8993937003e&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;},{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-818f-e8993ac80041&quot;,&quot;customerDomain&quot;:&quot;4356887288536161&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5871356702841780&quot;,&quot;customerCode&quot;:&quot;5871356702841780&quot;,&quot;regulatedSFC&quot;:&quot;5871356702841780&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;calle falsa 123&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-818f-e89939550040&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-05T08:31:45&quot;,&quot;groupId&quot;:&quot;d00ea1c1-923e-407d-9358-33ca557f27a3&quot;}]},&quot;pagination&quot;:{&quot;totalElements&quot;:3389,&quot;pageSize&quot;:10,&quot;pageNumber&quot;:1,&quot;hasMoreElements&quot;:true}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer exists&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:48]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:48]</span>
+                <span class="scenario-name">Customers GET {customerId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2363</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1754</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.CustomerManagement01.CustomerManagement01.Customers</div>
+      </div>
+      <div class="time-cell passed">1747</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1742</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.0.call.0.19">11:24:57.571 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;4785148466437606&quot;,&quot;businessName&quot;:&quot;4785148466437606&quot;,&quot;customerDocumentNumber&quot;:&quot;4785148466437606&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;4785148466437606&quot;,&quot;regulatedSFC&quot;:&quot;4785148466437606&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+11:24:59.311 response time in milliseconds: 1739
+1 &lt; 201
+1 &lt; Date: Fri, 14 Jun 2024 16:24:59 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:24:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-1791080307ef&quot;,&quot;customerName&quot;:&quot;4785148466437606&quot;,&quot;businessName&quot;:&quot;4785148466437606&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-1791081907f1&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;4785148466437606&quot;,&quot;customerCode&quot;:&quot;4785148466437606&quot;,&quot;regulatedSFC&quot;:&quot;4785148466437606&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-1791082907f3&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;groupId&quot;:&quot;46e338fd-88ab-4bae-9b2c-b6533bb2c5a3&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.0.call.0.27">11:24:59.313 [print] 0a913355-8fcb-197f-8190-1791080307ef 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.0.call.0.28">11:24:59.313 [print] 0a913355-8fcb-197f-8190-1791081907f1 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.0.call">
+    <div class="step-container" id="0.50.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.0.call.0.29">11:24:59.314 [print] 0a913355-8fcb-197f-8190-1791082907f3 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">606</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">11:24:59.317 request:
+2 &gt; GET https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-1791080307ef
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+2 &gt; Content-Type: application/json
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+11:24:59.922 response time in milliseconds: 605
+2 &lt; 200
+2 &lt; Date: Fri, 14 Jun 2024 16:24:59 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:24:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer already exists with id 0a913355-8fcb-197f-8190-1791080307ef&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-1791080307ef&quot;,&quot;customerName&quot;:&quot;4785148466437606&quot;,&quot;businessName&quot;:&quot;4785148466437606&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-1791081907f1&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;4785148466437606&quot;,&quot;customerCode&quot;:&quot;4785148466437606&quot;,&quot;regulatedSFC&quot;:&quot;4785148466437606&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-1791082907f3&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;groupId&quot;:&quot;46e338fd-88ab-4bae-9b2c-b6533bb2c5a3&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer already exists with id &quot; + capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:63]</span>
+                <span class="scenario-name">Customers PATCH {customerId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2438</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1513</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.CustomerManagement01.CustomerManagement01.Customers</div>
+      </div>
+      <div class="time-cell passed">1507</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1502</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.19">11:24:58.422 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;1533143255224679&quot;,&quot;businessName&quot;:&quot;1533143255224679&quot;,&quot;customerDocumentNumber&quot;:&quot;1533143255224679&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;1533143255224679&quot;,&quot;regulatedSFC&quot;:&quot;1533143255224679&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+11:24:59.922 response time in milliseconds: 1500
+1 &lt; 201
+1 &lt; Date: Fri, 14 Jun 2024 16:24:59 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:24:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-17910a5507f4&quot;,&quot;customerName&quot;:&quot;1533143255224679&quot;,&quot;businessName&quot;:&quot;1533143255224679&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-17910a6407f6&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;1533143255224679&quot;,&quot;customerCode&quot;:&quot;1533143255224679&quot;,&quot;regulatedSFC&quot;:&quot;1533143255224679&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-17910a7507f8&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;groupId&quot;:&quot;232ba8b3-11cb-4a21-943b-af97ddaa1c7f&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.27">11:24:59.927 [print] 0a913355-8fcb-197f-8190-17910a5507f4 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.28">11:24:59.927 [print] 0a913355-8fcb-197f-8190-17910a6407f6 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.29">11:24:59.927 [print] 0a913355-8fcb-197f-8190-17910a7507f8 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91335c-8c6e-1435-818c-7da122e4003f&quot;,&quot;customerTypeValue&quot;: &quot;COMPANY&quot;,&quot;customerTypeLabel&quot;: &quot;EMPRESA&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;BOGOTA DC&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;admin@clarocolombia.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerDomains&quot;: [{&quot;customerDomainId&quot;: &quot;a01f0aba-b22a-11ed-afa1-0242ac120002&quot;,&quot;customerDomain&quot;: &quot;clarocolombia&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerOwners&quot;: [{&quot;customerOwnerId&quot;: &quot;a01f0aba-b22a-11ed-afa1-0242ac120002&quot;,&quot;name&quot;: &quot;Juanito Perez&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;R 1.2.1&quot;,&quot;policyVersion&quot;: &quot;R 1.2.1&quot;,&quot;customerName&quot;: &quot;Claro Colombia&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;123456789&quot;,&quot;logo&quot;: &quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEh&quot;,&quot;regulatedSFC&quot;: &quot;987111&quot;,&quot;incomes&quot;: &quot;872727222&quot;,&quot;expenses&quot;: &quot;41717111&quot;,&quot;assets&quot;: &quot;12211111&quot;,&quot;passives&quot;: &quot;3901111&quot;,&quot;equity&quot;: &quot;567890&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">922</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">11:24:59.932 request:
+2 &gt; PATCH https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-17910a5507f4
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 1128
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91335c-8c6e-1435-818c-7da122e4003f&quot;,&quot;customerTypeValue&quot;:&quot;COMPANY&quot;,&quot;customerTypeLabel&quot;:&quot;EMPRESA&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;BOGOTA DC&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;admin@clarocolombia.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;a01f0aba-b22a-11ed-afa1-0242ac120002&quot;,&quot;customerDomain&quot;:&quot;clarocolombia&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;a01f0aba-b22a-11ed-afa1-0242ac120002&quot;,&quot;name&quot;:&quot;Juanito Perez&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;R 1.2.1&quot;,&quot;policyVersion&quot;:&quot;R 1.2.1&quot;,&quot;customerName&quot;:&quot;Claro Colombia&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;123456789&quot;,&quot;logo&quot;:&quot;\/9j\/4AAQSkZJRgABAQAAAQABAAD\/2wCEAAkGBxMTEhUSEh&quot;,&quot;regulatedSFC&quot;:&quot;987111&quot;,&quot;incomes&quot;:&quot;872727222&quot;,&quot;expenses&quot;:&quot;41717111&quot;,&quot;assets&quot;:&quot;12211111&quot;,&quot;passives&quot;:&quot;3901111&quot;,&quot;equity&quot;:&quot;567890&quot;}
+
+11:25:00.851 response time in milliseconds: 919
+2 &lt; 200
+2 &lt; Date: Fri, 14 Jun 2024 16:25:00 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:25:00&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Consulted Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-17910a5507f4&quot;,&quot;customerName&quot;:&quot;Claro Colombia&quot;,&quot;businessName&quot;:&quot;1533143255224679&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-17910a6407f6&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;1533143255224679&quot;,&quot;customerCode&quot;:&quot;1533143255224679&quot;,&quot;regulatedSFC&quot;:&quot;987111&quot;,&quot;logo&quot;:&quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEh&quot;,&quot;incomes&quot;:&quot;872727222&quot;,&quot;expenses&quot;:&quot;41717111&quot;,&quot;assets&quot;:&quot;12211111&quot;,&quot;passives&quot;:&quot;3901111&quot;,&quot;equity&quot;:&quot;567890&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91335c-8c6e-1435-818c-7da122e4003f&quot;,&quot;customerTypeValue&quot;:&quot;COMPANYPOST123COMCO&quot;,&quot;customerTypeLabel&quot;:&quot;Para pruebas&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;BOGOTA DC&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;admin@clarocolombia.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-17910a7507f8&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;R 1.2.1&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;R 1.2.1&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:24:58&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;123456789&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;groupId&quot;:&quot;0a913355-8fcb-197f-8190-17910a5507f4&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Consulted Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:79]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:79]</span>
+                <span class="scenario-name">Customers PUT {customerId}</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2128</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1607</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.81.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">users.CustomerManagement01.CustomerManagement01.Customers</div>
+      </div>
+      <div class="time-cell passed">1602</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def variableRandom = generarData.generarNumero(16)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1599</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81.0.call.0.19">11:24:59.936 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;5351832258052054&quot;,&quot;businessName&quot;:&quot;5351832258052054&quot;,&quot;customerDocumentNumber&quot;:&quot;5351832258052054&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;5351832258052054&quot;,&quot;regulatedSFC&quot;:&quot;5351832258052054&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+11:25:01.532 response time in milliseconds: 1595
+1 &lt; 201
+1 &lt; Date: Fri, 14 Jun 2024 16:25:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:25:01&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-179110ad07fb&quot;,&quot;customerName&quot;:&quot;5351832258052054&quot;,&quot;businessName&quot;:&quot;5351832258052054&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-179110c007fd&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5351832258052054&quot;,&quot;customerCode&quot;:&quot;5351832258052054&quot;,&quot;regulatedSFC&quot;:&quot;5351832258052054&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-1791110207ff&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;groupId&quot;:&quot;c9147bd1-eb35-4d9c-a11e-329100b1e454&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerId = $.data.customer.customerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.27">
+      <div class="step-ref passed">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81.0.call.0.27">11:25:01.533 [print] 0a913355-8fcb-197f-8190-179110ad07fb 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.28">
+      <div class="step-ref passed">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerDomainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81.0.call.0.28">11:25:01.533 [print] 0a913355-8fcb-197f-8190-179110c007fd 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.81.0.call">
+    <div class="step-container" id="0.81.0.call.0.29">
+      <div class="step-ref passed">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print capturarVariablecustomerOwnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81.0.call.0.29">11:25:01.533 [print] 0a913355-8fcb-197f-8190-1791110207ff 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarData = Java.type(&#39;Utilidades.generarData&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/&#39; + capturarVariablecustomerId + &#39;/status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header message-uuid = &#39;acxff62e-6f12-42de-9012-1e7304418abd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header request-app-id = &#39;c4e6bd04-5149-11e7-b114-a2f933d5fe66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;customerStatus&quot;: &quot;INACTIVE&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">518</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.90">11:25:01.538 request:
+2 &gt; PUT https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-179110ad07fb/status
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 29
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerStatus&quot;:&quot;INACTIVE&quot;}
+
+11:25:02.054 response time in milliseconds: 515
+2 &lt; 200
+2 &lt; Date: Fri, 14 Jun 2024 16:25:01 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-14T11:25:01&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacción exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer State Updated Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-179110ad07fb&quot;,&quot;customerName&quot;:&quot;5351832258052054&quot;,&quot;businessName&quot;:&quot;5351832258052054&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-179110c007fd&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;5351832258052054&quot;,&quot;customerCode&quot;:&quot;5351832258052054&quot;,&quot;regulatedSFC&quot;:&quot;5351832258052054&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACIÓN 1&quot;}],&quot;customerStatus&quot;:&quot;INACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-1791110207ff&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-14T11:25:00&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-14T11:25:01&quot;,&quot;groupId&quot;:&quot;c9147bd1-eb35-4d9c-a11e-329100b1e454&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.messageResponse.responseDetails == &quot;Customer State Updated Successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

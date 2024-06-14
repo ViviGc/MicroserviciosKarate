@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/SubscriptionManagement04\/Subscriptions_Business[1:7]","start":1718126890579,"end":1718126894443,"title":"users\/SubscriptionManagement04\/Subscriptions_Business[1:7] 12:28:10.579-12:28:14.443 SubscriptionBusiness POST"},{"id":2,"group":2,"content":"users\/SubscriptionManagement04\/Subscriptions_Business[2:27]","start":1718126890579,"end":1718126894626,"title":"users\/SubscriptionManagement04\/Subscriptions_Business[2:27] 12:28:10.579-12:28:14.626 SubscriptionBusiness GET"},{"id":3,"group":1,"content":"users\/SubscriptionManagement04\/Subscriptions_Business[3:42]","start":1718126894448,"end":1718126896304,"title":"users\/SubscriptionManagement04\/Subscriptions_Business[3:42] 12:28:14.448-12:28:16.304 SubscriptionBusiness GETID {BusinessId}","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

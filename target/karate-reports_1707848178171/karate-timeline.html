@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+<<<<<<<< HEAD:target/karate-reports_1707848178171/karate-timeline.html
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/users\/SubscriptionManagement04\/Suscription[3:40]","start":1707848157772,"end":1707848159674,"title":"src\/test\/java\/users\/SubscriptionManagement04\/Suscription[3:40] 13:15:57.772-13:15:59.674 Products PUT {productId}"}];
+========
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/users\/SubscriptionManagement04\/Suscription[3:40]","start":1707848178917,"end":1707848180743,"title":"src\/test\/java\/users\/SubscriptionManagement04\/Suscription[3:40] 13:16:18.917-13:16:20.743 Products PUT {productId}"}];
+>>>>>>>> c3d95ba71d0582e1c896a0498887d6beda820525:target/karate-reports_1707943057391/karate-timeline.html
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/SubscriptionManagement04\/SubscriptionsAccounts[1:7]","start":1717804183119,"end":1717804187269,"title":"users\/SubscriptionManagement04\/SubscriptionsAccounts[1:7] 18:49:43.119-18:49:47.269 SubscriptionAccounts POST"},{"id":2,"group":2,"content":"users\/SubscriptionManagement04\/SubscriptionsAccounts[2:55]","start":1717804183119,"end":1717804187365,"title":"users\/SubscriptionManagement04\/SubscriptionsAccounts[2:55] 18:49:43.119-18:49:47.365 SubscriptionAccounts PUT {SubscriptionAccountsId}"},{"id":3,"group":1,"content":"users\/SubscriptionManagement04\/SubscriptionsAccounts[3:101]","start":1717804187272,"end":1717804187703,"title":"users\/SubscriptionManagement04\/SubscriptionsAccounts[3:101] 18:49:47.272-18:49:47.703 SubscriptionAccounts GET {SubscriptionAccountsId}"},{"id":4,"group":2,"content":"users\/SubscriptionManagement04\/SubscriptionsAccounts[4:117]","start":1717804187371,"end":1717804190197,"title":"users\/SubscriptionManagement04\/SubscriptionsAccounts[4:117] 18:49:47.371-18:49:50.197 SubscriptionAccounts GET {Id}","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

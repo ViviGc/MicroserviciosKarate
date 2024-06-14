@@ -1,0 +1,72 @@
+plugins{
+    id 'java'
+}
+task runKarateTest(type: Test) {
+    description = "Run Karate test"
+    group = 'verification'
+    dependsOn testClasses
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+
+
+    include 'users.ManagementTest'
+}
+
+repositories {
+    maven{
+        url 'https://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies{
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC4'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+
+}
+
+test{
+    useJUnitPlatform()
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+}
+
+/*ext {
+    testTasks = [
+            'karate': 'src/test/java/users/ManagementTest.java'
+    ]
+}
+
+testTasks.each { taskName, profile ->
+    task "${taskName}Test"(type: Test) {
+        description = "Run ${taskName} regression tests"
+        group = 'verification'
+        systemProperty "environment", "default"
+        useTestNG()
+        include '*Test.'class**/
+/*        options {
+            systemProperties(System.getProperties())
+        }
+        doFirst {
+            project.ext.set('testProfile', profile)
+        }
+    }
+}
+task allRegressionTests(type: Test) {
+    dependsOn testTasks.values()
+}
+task aggregateRegressionReports(type: TestReport) {
+    destinationDir = file("$buildDir/reports/aggregateRegression")
+    def testTaskNames = testTasks.keySet()
+    testTaskNames.each { taskName ->
+        reportOn(tasks["$taskName"])
+    }
+}
+*/
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}

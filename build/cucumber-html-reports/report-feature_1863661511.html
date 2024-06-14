@@ -1,0 +1,8417 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: users/SubscriptionManagement04/Subscriptions_Contacts.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>curso_karate</td>
+      <td>12 jun. 2024, 12:58</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">users/SubscriptionManagement04/Subscriptions_Contacts.feature</td>
+          <td      class="passed"    >255</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">255</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="44959960400">44.959</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">users/SubscriptionManagement04/Subscriptions_Contacts.feature</span>
+
+
+</div>
+
+        <div class="description indention">Customer</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3793585272.html">@Microservicios</a>
+</div>
+
+
+  <span class="lead-duration duration">12.383</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">SubscriptionContacts POST</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Subscriptions_Business.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">3.413</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Subscriptions_Business.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Suscription.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.984</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Suscription.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.136</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; passed">
+  <span class="keyword indention">&gt;&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/../CustomerManagement01/Customers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def variableRandom = generarData.generarNumero(16)</span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt;&gt; When</span>
+  <span class="name">request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">2.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:57:52.902 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;0330176616032486&quot;,&quot;businessName&quot;:&quot;0330176616032486&quot;,&quot;customerDocumentNumber&quot;:&quot;0330176616032486&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;0330176616032486&quot;,&quot;regulatedSFC&quot;:&quot;0330176616032486&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+12:57:54.808 response time in milliseconds: 1904
+1 &lt; 201
+1 &lt; Date: Wed, 12 Jun 2024 17:57:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:54&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d99637a066c&quot;,&quot;customerName&quot;:&quot;0330176616032486&quot;,&quot;businessName&quot;:&quot;0330176616032486&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-0d996393066e&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;0330176616032486&quot;,&quot;customerCode&quot;:&quot;0330176616032486&quot;,&quot;regulatedSFC&quot;:&quot;0330176616032486&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACI&Oacute;N 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-0d9963a90670&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;groupId&quot;:&quot;75050839-5604-4a05-b0fc-6f1db785c62d&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerId = $.data.customer.customerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:57:54.815 [print] 0a913355-8fcb-197f-8190-0d99637a066c 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerDomainId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>12:57:54.816 [print] 0a913355-8fcb-197f-8190-0d996393066e 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:57:54.817 [print] 0a913355-8fcb-197f-8190-0d9963a90670 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.821</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>12:57:54.823 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99637a066c/subscriptions
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 482
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+12:57:55.641 response time in milliseconds: 818
+2 &lt; 201
+2 &lt; Date: Wed, 12 Jun 2024 17:57:55 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:55&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663a02fb&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d99637a066c&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:55&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99669f02fc&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663a02fb&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99669f02fd&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663a02fb&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>12:57:55.644 [print] 0a913355-8fcb-197f-8190-0d99637a066c 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>12:57:55.646 [print] 0a9133a6-8f4e-17ca-8190-0d99663a02fb 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/business'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request { &quot;customerDocumentNumber&quot;: #(variableRandom), &quot;customerDocumentType&quot;: &quot;CC&quot;, &quot;customerName&quot;: &quot;Luis Lopez&quot;, &quot;businessName&quot;: &quot;Zapatos11345&quot;, &quot;status&quot;: &quot;ACTIVE&quot;, &quot;businessType&quot;: &quot;Local&quot;, &quot;address&quot;: &quot;Avenida 19 98-76&quot;, &quot;city&quot;: &quot;Bogta&quot;, &quot;department&quot;: &quot;Cundinamarca&quot;, &quot;email&quot;: &quot;email@gmail.com&quot;, &quot;telephone&quot;: &quot;30018181811&quot;, &quot;principalCiiuCode&quot;: &quot;2491&quot;, &quot;secondaryCiiuCode&quot;: &quot;1109&quot;, &quot;commerCode&quot;: &quot;2345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.396</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:57:55.653 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99637a066c/subscriptions/0a9133a6-8f4e-17ca-8190-0d99663a02fb/business
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 370
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerDocumentNumber&quot;:&quot;0330176616032486&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;}
+
+12:57:56.046 response time in milliseconds: 393
+3 &lt; 201
+3 &lt; Date: Wed, 12 Jun 2024 17:57:55 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:55&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;business&quot;:{&quot;subscriptionBusinessId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99688902ff&quot;,&quot;customerDocumentNumber&quot;:&quot;0330176616032486&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:55&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:55&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>12:57:56.050 [print] 0a913355-8fcb-197f-8190-0d99637a066c 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>12:57:56.050 [print] 0a9133a6-8f4e-17ca-8190-0d99663a02fb 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionBusiness = $.data.business.subscriptionBusinessId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:57:56.052 [print] 0a9133a6-8f4e-17ca-8190-0d99688902ff 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/contacts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request { &quot;name&quot;: #(variableRandom), &quot;email&quot;: &quot;luis.lopez@mail.com&quot;, &quot;telephoneNumber&quot;: &quot;3003000000&quot;, &quot;contactType&quot;: &quot;Tipo de Contacto&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.349</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>12:57:56.058 request:
+4 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99637a066c/subscriptions/0a9133a6-8f4e-17ca-8190-0d99663a02fb/contacts
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 121
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;0330176616032486&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}
+
+12:57:56.405 response time in milliseconds: 346
+4 &lt; 201
+4 &lt; Date: Wed, 12 Jun 2024 17:57:56 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:56&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;contact&quot;:{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9969f00300&quot;,&quot;name&quot;:&quot;0330176616032486&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>12:57:56.407 [print] 0a913355-8fcb-197f-8190-0d99637a066c 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>12:57:56.407 [print] 0a9133a6-8f4e-17ca-8190-0d99663a02fb 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def capturarVariablesubscriptionContactId = $.data.contact.subscriptionContactId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>12:57:56.408 [print] 0a9133a6-8f4e-17ca-8190-0d99688902ff 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print capturarVariablesubscriptionContactId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>12:57:56.409 [print] 0a9133a6-8f4e-17ca-8190-0d9969f00300 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">12.051</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">SubscriptionContacts GET</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Subscriptions_Business.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">3.320</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Subscriptions_Business.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Suscription.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.887</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Suscription.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; passed">
+  <span class="keyword indention">&gt;&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/../CustomerManagement01/Customers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def variableRandom = generarData.generarNumero(16)</span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt;&gt; When</span>
+  <span class="name">request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.961</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>12:57:52.903 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;7428926436531394&quot;,&quot;businessName&quot;:&quot;7428926436531394&quot;,&quot;customerDocumentNumber&quot;:&quot;7428926436531394&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;7428926436531394&quot;,&quot;regulatedSFC&quot;:&quot;7428926436531394&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+12:57:54.708 response time in milliseconds: 1803
+1 &lt; 201
+1 &lt; Date: Wed, 12 Jun 2024 17:57:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:54&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d99631f0667&quot;,&quot;customerName&quot;:&quot;7428926436531394&quot;,&quot;businessName&quot;:&quot;7428926436531394&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-0d99632e0669&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;7428926436531394&quot;,&quot;customerCode&quot;:&quot;7428926436531394&quot;,&quot;regulatedSFC&quot;:&quot;7428926436531394&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACI&Oacute;N 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996344066b&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:53&quot;,&quot;groupId&quot;:&quot;f2416da0-6c40-4ebd-b5c8-fe16aafa328e&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerId = $.data.customer.customerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>12:57:54.734 [print] 0a913355-8fcb-197f-8190-0d99631f0667 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerDomainId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>12:57:54.736 [print] 0a913355-8fcb-197f-8190-0d99632e0669 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>12:57:54.737 [print] 0a913355-8fcb-197f-8190-0d996344066b 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions'</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.795</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>12:57:54.751 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99631f0667/subscriptions
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 482
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+12:57:55.543 response time in milliseconds: 792
+2 &lt; 201
+2 &lt; Date: Wed, 12 Jun 2024 17:57:55 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:55&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9965d402f8&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d99631f0667&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:55&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663802f9&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9965d402f8&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663902fa&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9965d402f8&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>12:57:55.547 [print] 0a913355-8fcb-197f-8190-0d99631f0667 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>12:57:55.549 [print] 0a9133a6-8f4e-17ca-8190-0d9965d402f8 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/business'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request { &quot;customerDocumentNumber&quot;: #(variableRandom), &quot;customerDocumentType&quot;: &quot;CC&quot;, &quot;customerName&quot;: &quot;Luis Lopez&quot;, &quot;businessName&quot;: &quot;Zapatos11345&quot;, &quot;status&quot;: &quot;ACTIVE&quot;, &quot;businessType&quot;: &quot;Local&quot;, &quot;address&quot;: &quot;Avenida 19 98-76&quot;, &quot;city&quot;: &quot;Bogta&quot;, &quot;department&quot;: &quot;Cundinamarca&quot;, &quot;email&quot;: &quot;email@gmail.com&quot;, &quot;telephone&quot;: &quot;30018181811&quot;, &quot;principalCiiuCode&quot;: &quot;2491&quot;, &quot;secondaryCiiuCode&quot;: &quot;1109&quot;, &quot;commerCode&quot;: &quot;2345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.398</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>12:57:55.557 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99631f0667/subscriptions/0a9133a6-8f4e-17ca-8190-0d9965d402f8/business
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 370
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerDocumentNumber&quot;:&quot;7428926436531394&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;}
+
+12:57:55.952 response time in milliseconds: 394
+3 &lt; 201
+3 &lt; Date: Wed, 12 Jun 2024 17:57:55 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:55&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;business&quot;:{&quot;subscriptionBusinessId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99682402fe&quot;,&quot;customerDocumentNumber&quot;:&quot;7428926436531394&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:55&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:55&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>12:57:55.958 [print] 0a913355-8fcb-197f-8190-0d99631f0667 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>12:57:55.958 [print] 0a9133a6-8f4e-17ca-8190-0d9965d402f8 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionBusiness = $.data.business.subscriptionBusinessId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>12:57:55.960 [print] 0a9133a6-8f4e-17ca-8190-0d99682402fe 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/contacts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params { pageSize: 10, pageNumber: 1 }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.379</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>12:57:55.969 request:
+4 &gt; GET https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d99631f0667/subscriptions/0a9133a6-8f4e-17ca-8190-0d9965d402f8/contacts?pageNumber=1&amp;pageSize=10
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+4 &gt; Content-Type: application/json
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+12:57:56.344 response time in milliseconds: 374
+4 &lt; 200
+4 &lt; Date: Wed, 12 Jun 2024 17:57:56 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:56&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;The request of Accounts list was successful&quot;},&quot;data&quot;:{&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663802f9&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99663902fa&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]},&quot;pagination&quot;:{&quot;totalElements&quot;:2,&quot;pageSize&quot;:10,&quot;pageNumber&quot;:1,&quot;hasMoreElements&quot;:false}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;The request of Accounts list was successful&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">12.227</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">SubscriptionContacts GETID {BusinessId}</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Subscriptions_Contacts.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.886</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Subscriptions_Contacts.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Subscriptions_Business.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.446</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Subscriptions_Business.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Suscription.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.096</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; passed">
+  <span class="keyword indention">&gt;&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/../SubscriptionManagement04/Suscription.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">1.619</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; passed">
+  <span class="keyword indention">&gt;&gt;&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/../CustomerManagement01/Customers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; *</span>
+  <span class="name">def variableRandom = generarData.generarNumero(16)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; When</span>
+  <span class="name">request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.596</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>12:57:56.398 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;1728212065438085&quot;,&quot;businessName&quot;:&quot;1728212065438085&quot;,&quot;customerDocumentNumber&quot;:&quot;1728212065438085&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;1728212065438085&quot;,&quot;regulatedSFC&quot;:&quot;1728212065438085&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+12:57:57.990 response time in milliseconds: 1590
+1 &lt; 201
+1 &lt; Date: Wed, 12 Jun 2024 17:57:57 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:57&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996ffe0676&quot;,&quot;customerName&quot;:&quot;1728212065438085&quot;,&quot;businessName&quot;:&quot;1728212065438085&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-0d9970110678&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;1728212065438085&quot;,&quot;customerCode&quot;:&quot;1728212065438085&quot;,&quot;regulatedSFC&quot;:&quot;1728212065438085&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACI&Oacute;N 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-0d997022067a&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;groupId&quot;:&quot;29e9b64c-1697-475a-b565-98e92ea16851&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerId = $.data.customer.customerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>12:57:57.996 [print] 0a913355-8fcb-197f-8190-0d996ffe0676 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>12:57:57.998 [print] 0a913355-8fcb-197f-8190-0d9970110678 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>12:57:57.998 [print] 0a913355-8fcb-197f-8190-0d997022067a 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt;&gt; When</span>
+  <span class="name">request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.460</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>12:57:58.005 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996ffe0676/subscriptions
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 482
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+12:57:58.462 response time in milliseconds: 456
+2 &lt; 201
+2 &lt; Date: Wed, 12 Jun 2024 17:57:58 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:58&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971eb0304&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996ffe0676&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:58&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971fb0305&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971eb0304&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971fb0306&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971eb0304&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>12:57:58.466 [print] 0a913355-8fcb-197f-8190-0d996ffe0676 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>12:57:58.468 [print] 0a9133a6-8f4e-17ca-8190-0d9971eb0304 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/business'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">request { &quot;customerDocumentNumber&quot;: #(variableRandom), &quot;customerDocumentType&quot;: &quot;CC&quot;, &quot;customerName&quot;: &quot;Luis Lopez&quot;, &quot;businessName&quot;: &quot;Zapatos11345&quot;, &quot;status&quot;: &quot;ACTIVE&quot;, &quot;businessType&quot;: &quot;Local&quot;, &quot;address&quot;: &quot;Avenida 19 98-76&quot;, &quot;city&quot;: &quot;Bogta&quot;, &quot;department&quot;: &quot;Cundinamarca&quot;, &quot;email&quot;: &quot;email@gmail.com&quot;, &quot;telephone&quot;: &quot;30018181811&quot;, &quot;principalCiiuCode&quot;: &quot;2491&quot;, &quot;secondaryCiiuCode&quot;: &quot;1109&quot;, &quot;commerCode&quot;: &quot;2345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.334</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>12:57:58.474 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996ffe0676/subscriptions/0a9133a6-8f4e-17ca-8190-0d9971eb0304/business
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 370
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerDocumentNumber&quot;:&quot;1728212065438085&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;}
+
+12:57:58.807 response time in milliseconds: 332
+3 &lt; 201
+3 &lt; Date: Wed, 12 Jun 2024 17:57:58 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:58&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;business&quot;:{&quot;subscriptionBusinessId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9973520308&quot;,&quot;customerDocumentNumber&quot;:&quot;1728212065438085&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:58&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:58&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>12:57:58.808 [print] 0a913355-8fcb-197f-8190-0d996ffe0676 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>12:57:58.809 [print] 0a9133a6-8f4e-17ca-8190-0d9971eb0304 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionBusiness = $.data.business.subscriptionBusinessId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>12:57:58.809 [print] 0a9133a6-8f4e-17ca-8190-0d9973520308 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/contacts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request { &quot;name&quot;: #(variableRandom), &quot;email&quot;: &quot;luis.lopez@mail.com&quot;, &quot;telephoneNumber&quot;: &quot;3003000000&quot;, &quot;contactType&quot;: &quot;Tipo de Contacto&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.422</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>12:57:58.814 request:
+4 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996ffe0676/subscriptions/0a9133a6-8f4e-17ca-8190-0d9971eb0304/contacts
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 121
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;1728212065438085&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}
+
+12:57:59.234 response time in milliseconds: 420
+4 &lt; 201
+4 &lt; Date: Wed, 12 Jun 2024 17:57:59 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;contact&quot;:{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9974bc0309&quot;,&quot;name&quot;:&quot;1728212065438085&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>12:57:59.236 [print] 0a913355-8fcb-197f-8190-0d996ffe0676 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>12:57:59.237 [print] 0a9133a6-8f4e-17ca-8190-0d9971eb0304 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionContactId = $.data.contact.subscriptionContactId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>12:57:59.238 [print] 0a9133a6-8f4e-17ca-8190-0d9973520308 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionContactId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>12:57:59.239 [print] 0a9133a6-8f4e-17ca-8190-0d9974bc0309 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/contacts/' + capturarVariablesubscriptionContactId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.333</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>12:57:59.245 request:
+5 &gt; GET https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996ffe0676/subscriptions/0a9133a6-8f4e-17ca-8190-0d9971eb0304/contacts/0a9133a6-8f4e-17ca-8190-0d9974bc0309
+5 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+5 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+5 &gt; Content-Type: application/json
+5 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+12:57:59.577 response time in milliseconds: 331
+5 &lt; 200
+5 &lt; Date: Wed, 12 Jun 2024 17:57:59 GMT
+5 &lt; Content-Type: application/json
+5 &lt; Transfer-Encoding: chunked
+5 &lt; Connection: keep-alive
+5 &lt; Vary: Origin
+5 &lt; Vary: Access-Control-Request-Method
+5 &lt; Vary: Access-Control-Request-Headers
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-XSS-Protection: 1; mode=block
+5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+5 &lt; Pragma: no-cache
+5 &lt; Expires: 0
+5 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Accounts updated on the Subscription successfully&quot;},&quot;data&quot;:{&quot;contact&quot;:{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9974bc0309&quot;,&quot;name&quot;:&quot;1728212065438085&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Accounts updated on the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">8.298</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-52">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">SubscriptionBusinessAccounts PUT {BusinessId}</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-52" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-53">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-53" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Subscriptions_Business.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">2.308</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Subscriptions_Business.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">call read(&quot;../SubscriptionManagement04/Suscription.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">1.909</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/Suscription.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">call read(&quot;../CustomerManagement01/Customers.feature@Microservicios&quot;)</span>
+
+  <span class="lead-duration duration">1.457</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; passed">
+  <span class="keyword indention">&gt;&gt;</span>
+  <span class="name">users/SubscriptionManagement04/../SubscriptionManagement04/../CustomerManagement01/Customers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def generarData = Java.type('Utilidades.generarData')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">configure ssl = { trustAll: true }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt;&gt; *</span>
+  <span class="name">def variableRandom = generarData.generarNumero(16)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt;&gt; When</span>
+  <span class="name">request { &quot;customerName&quot;: #(variableRandom),&quot;businessName&quot;: #(variableRandom),&quot;customerDocumentNumber&quot;: #(variableRandom),&quot;customerDocumentType&quot;: &quot;NT&quot;,&quot;customerCode&quot;: #(variableRandom),&quot;regulatedSFC&quot;: #(variableRandom),&quot;logo&quot;: &quot;&quot;,&quot;incomes&quot;: &quot;80&quot;,&quot;expenses&quot;: &quot;40&quot;,&quot;assets&quot;: &quot;4&quot;,&quot;passives&quot;: &quot;3&quot;,&quot;equity&quot;: &quot;1&quot;,&quot;customerDomain&quot;: [{&quot;domain&quot;: &quot;gufum&quot;,&quot;status&quot;: &quot;ACTIVE&quot;}],&quot;customerTypes&quot;: [{&quot;customerTypeId&quot;: &quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;: {&quot;customerCountry&quot;: &quot;CO&quot;,&quot;customerDepartment&quot;: &quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;: &quot;BOGOTA&quot;,&quot;customerCity&quot;: &quot;BOGOTA&quot;,&quot;customerAddress&quot;: &quot;calle falsa 123&quot;},&quot;customerPhone&quot;: {&quot;phoneCode&quot;: &quot;57&quot;,&quot;phoneNumber&quot;: &quot;3161002233&quot;},&quot;customerEmail&quot;: &quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;: {&quot;activity&quot;: &quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;: &quot;7320&quot;},&quot;customerOwners&quot;: [{&quot;name&quot;: &quot;Juan higuera&quot;,&quot;documentType&quot;: &quot;CC&quot;,&quot;documentNumber&quot;: &quot;123456&quot;,&quot;relation&quot;: &quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;: &quot;SI&quot;}],&quot;termsAndConditionVersion&quot;: &quot;&quot;,&quot;policyVersion&quot;: &quot;&quot;,&quot;financialInstitutionCode&quot;: &quot;&quot;,&quot;entityType&quot;: &quot;PUBLIC&quot;,&quot;eanCode&quot;: &quot;&quot;,&quot;compensationCode&quot;: &quot;&quot;,&quot;limitUse&quot;: &quot;&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.440</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>12:57:56.444 request:
+1 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers
+1 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+1 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1050
+1 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerName&quot;:&quot;3560843264423932&quot;,&quot;businessName&quot;:&quot;3560843264423932&quot;,&quot;customerDocumentNumber&quot;:&quot;3560843264423932&quot;,&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerCode&quot;:&quot;3560843264423932&quot;,&quot;regulatedSFC&quot;:&quot;3560843264423932&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerDomain&quot;:[{&quot;domain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;}],&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;activity&quot;:&quot;Estudios de mercado.&quot;,&quot;ciiuCode&quot;:&quot;7320&quot;},&quot;customerOwners&quot;:[{&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;}
+
+12:57:57.881 response time in milliseconds: 1436
+1 &lt; 201
+1 &lt; Date: Wed, 12 Jun 2024 17:57:57 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:57&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Customer Created Successfully&quot;},&quot;data&quot;:{&quot;customer&quot;:{&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996f920671&quot;,&quot;customerName&quot;:&quot;3560843264423932&quot;,&quot;businessName&quot;:&quot;3560843264423932&quot;,&quot;customerDomains&quot;:[{&quot;customerDomainId&quot;:&quot;0a913355-8fcb-197f-8190-0d996fa20673&quot;,&quot;customerDomain&quot;:&quot;gufum&quot;,&quot;status&quot;:&quot;ACTIVE&quot;}],&quot;customerDocumentType&quot;:&quot;NT&quot;,&quot;customerDocumentNumber&quot;:&quot;3560843264423932&quot;,&quot;customerCode&quot;:&quot;3560843264423932&quot;,&quot;regulatedSFC&quot;:&quot;3560843264423932&quot;,&quot;logo&quot;:&quot;&quot;,&quot;incomes&quot;:&quot;80&quot;,&quot;expenses&quot;:&quot;40&quot;,&quot;assets&quot;:&quot;4&quot;,&quot;passives&quot;:&quot;3&quot;,&quot;equity&quot;:&quot;1&quot;,&quot;customerTypes&quot;:[{&quot;customerTypeId&quot;:&quot;0a91337e-8c88-1ce7-818c-8d87e2d8003d&quot;,&quot;customerTypeValue&quot;:&quot;ADMINISTRATOR_PARTNER12241&quot;,&quot;customerTypeLabel&quot;:&quot;OPERADORAS DE INFORMACI&Oacute;N 1&quot;}],&quot;customerStatus&quot;:&quot;ACTIVE&quot;,&quot;customerAddressInformation&quot;:{&quot;customerCountry&quot;:&quot;CO&quot;,&quot;customerDepartment&quot;:&quot;CUNDINAMARCA&quot;,&quot;customerProvince&quot;:&quot;BOGOTA&quot;,&quot;customerCity&quot;:&quot;BOGOTA&quot;,&quot;customerAddress&quot;:&quot;calle falsa 123&quot;},&quot;customerPhone&quot;:{&quot;phoneCode&quot;:&quot;57&quot;,&quot;phoneNumber&quot;:&quot;3161002233&quot;},&quot;customerEmail&quot;:&quot;fudrayepsu@gufum.com&quot;,&quot;ciiuCode&quot;:{&quot;ciiuCode&quot;:&quot;7320&quot;,&quot;activity&quot;:&quot;Estudios de mercado.&quot;},&quot;customerOwners&quot;:[{&quot;customerOwnerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996fb60675&quot;,&quot;name&quot;:&quot;Juan higuera&quot;,&quot;documentType&quot;:&quot;CC&quot;,&quot;documentNumber&quot;:&quot;123456&quot;,&quot;relation&quot;:&quot;REPRESENTANTE_LEGAL&quot;,&quot;pep&quot;:&quot;SI&quot;}],&quot;termsAndConditionVersion&quot;:&quot;&quot;,&quot;termsAndConditionDatetime&quot;:&quot;&quot;,&quot;policyVersion&quot;:&quot;&quot;,&quot;policyDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;financialInstitutionCode&quot;:&quot;&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;entityType&quot;:&quot;PUBLIC&quot;,&quot;eanCode&quot;:&quot;&quot;,&quot;compensationCode&quot;:&quot;&quot;,&quot;limitUse&quot;:&quot;&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:56&quot;,&quot;groupId&quot;:&quot;e8df7bbc-2658-488f-a48f-3ee77d42ac91&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Customer Created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerId = $.data.customer.customerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerDomainId = $.data.customer.customerDomains[0].customerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">def capturarVariablecustomerOwnerId = $.data.customer.customerOwners[0].customerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And def capturarVariablevariableRandom = $.data.variableRandom</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>12:57:57.885 [print] 0a913355-8fcb-197f-8190-0d996f920671 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerDomainId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>12:57:57.885 [print] 0a913355-8fcb-197f-8190-0d996fa20673 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerOwnerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>12:57:57.885 [print] 0a913355-8fcb-197f-8190-0d996fb60675 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">request {&quot;productId&quot;: &quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;: &quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;: &quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;: &quot;9001239999994&quot;,&quot;customerName&quot;: &quot;Pedro Perez2232&quot;,&quot;customerCode&quot;: &quot;ABC121&quot;,&quot;customerDocumentType&quot;: &quot;TI&quot;,&quot;contacts&quot;: [{&quot;name&quot;: &quot;Maria&quot;,&quot;email&quot;: &quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;1121212121&quot;,&quot;contactType&quot;: &quot;AB&quot;},{&quot;name&quot;: &quot;Jose&quot;,&quot;email&quot;: &quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;: &quot;121212123&quot;,&quot;contactType&quot;: &quot;BE&quot;}]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.436</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>12:57:57.889 request:
+2 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996f920671/subscriptions
+2 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 482
+2 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;contacts&quot;:[{&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}
+
+12:57:58.324 response time in milliseconds: 435
+2 &lt; 201
+2 &lt; Date: Wed, 12 Jun 2024 17:57:58 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:58&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Subscription created Successfully&quot;},&quot;data&quot;:{&quot;subscription&quot;:{&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971600301&quot;,&quot;productId&quot;:&quot;0a91331f-8cf9-19f2-818d-7a21423f00ad&quot;,&quot;customerId&quot;:&quot;0a913355-8fcb-197f-8190-0d996f920671&quot;,&quot;customerTypeId&quot;:&quot;7f000101-8adc-1104-818a-dc48239d0061&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;subscriptionName&quot;:&quot;Para preubas de subscriptionPara &quot;,&quot;customerDocumentNumber&quot;:&quot;9001239999994&quot;,&quot;customerName&quot;:&quot;Pedro Perez2232&quot;,&quot;customerCode&quot;:&quot;ABC121&quot;,&quot;customerDocumentType&quot;:&quot;TI&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:58&quot;,&quot;accounts&quot;:[],&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99716c0302&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971600301&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99716c0303&quot;,&quot;subscriptionId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9971600301&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}],&quot;business&quot;:null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Subscription created Successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-59">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details">
+        <pre>12:57:58.327 [print] 0a913355-8fcb-197f-8190-0d996f920671 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionId = $.data.subscription.subscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>12:57:58.328 [print] 0a9133a6-8f4e-17ca-8190-0d9971600301 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/business'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request { &quot;customerDocumentNumber&quot;: #(variableRandom), &quot;customerDocumentType&quot;: &quot;CC&quot;, &quot;customerName&quot;: &quot;Luis Lopez&quot;, &quot;businessName&quot;: &quot;Zapatos11345&quot;, &quot;status&quot;: &quot;ACTIVE&quot;, &quot;businessType&quot;: &quot;Local&quot;, &quot;address&quot;: &quot;Avenida 19 98-76&quot;, &quot;city&quot;: &quot;Bogta&quot;, &quot;department&quot;: &quot;Cundinamarca&quot;, &quot;email&quot;: &quot;email@gmail.com&quot;, &quot;telephone&quot;: &quot;30018181811&quot;, &quot;principalCiiuCode&quot;: &quot;2491&quot;, &quot;secondaryCiiuCode&quot;: &quot;1109&quot;, &quot;commerCode&quot;: &quot;2345&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.384</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-61" class="collapse collapsable-details">
+        <pre>12:57:58.335 request:
+3 &gt; POST https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996f920671/subscriptions/0a9133a6-8f4e-17ca-8190-0d9971600301/business
+3 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 370
+3 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;customerDocumentNumber&quot;:&quot;3560843264423932&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;}
+
+12:57:58.718 response time in milliseconds: 382
+3 &lt; 201
+3 &lt; Date: Wed, 12 Jun 2024 17:57:58 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:201,&quot;httpStatusDesc&quot;:&quot;CREATED&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:null,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:58&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Account added to the Subscription successfully&quot;},&quot;data&quot;:{&quot;business&quot;:{&quot;subscriptionBusinessId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d9972ea0307&quot;,&quot;customerDocumentNumber&quot;:&quot;3560843264423932&quot;,&quot;customerDocumentType&quot;:&quot;CC&quot;,&quot;customerName&quot;:&quot;Luis Lopez&quot;,&quot;businessName&quot;:&quot;Zapatos11345&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;businessType&quot;:&quot;Local&quot;,&quot;address&quot;:&quot;Avenida 19 98-76&quot;,&quot;city&quot;:&quot;Bogta&quot;,&quot;department&quot;:&quot;Cundinamarca&quot;,&quot;email&quot;:&quot;email@gmail.com&quot;,&quot;telephone&quot;:&quot;30018181811&quot;,&quot;principalCiiuCode&quot;:&quot;2491&quot;,&quot;secondaryCiiuCode&quot;:&quot;1109&quot;,&quot;commerCode&quot;:&quot;2345&quot;,&quot;createDatetime&quot;:&quot;2024-06-12T12:57:58&quot;,&quot;updateDatetime&quot;:&quot;2024-06-12T12:57:58&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Account added to the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablecustomerId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-62">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-62" class="collapse collapsable-details">
+        <pre>12:57:58.721 [print] 0a913355-8fcb-197f-8190-0d996f920671 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>12:57:58.721 [print] 0a9133a6-8f4e-17ca-8190-0d9971600301 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def capturarVariablesubscriptionBusiness = $.data.business.subscriptionBusinessId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print capturarVariablesubscriptionBusiness</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>12:57:58.721 [print] 0a9133a6-8f4e-17ca-8190-0d9972ea0307 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/' + capturarVariablecustomerId + '/subscriptions/' + capturarVariablesubscriptionId + '/contacts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header message-uuid = 'acxff62e-6f12-42de-9012-1e7304418abd'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header request-app-id = 'c4e6bd04-5149-11e7-b114-a2f933d5fe66'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request { &quot;contacts&quot;: [ { &quot;id&quot;: &quot;zz1f0asa-b22a-11ed-afa1-0242ac120f12&quot;, &quot;name&quot;: &quot;Luis Lopez 02&quot;, &quot;email&quot;: &quot;luis.lopez@mail.com&quot;, &quot;telephoneNumber&quot;: &quot;3003000000&quot;, &quot;contactType&quot;: &quot;Tipo de Contacto&quot; } ] }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method PUT</span>
+
+  <span class="lead-duration duration">0.342</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-65">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details">
+        <pre>12:57:58.726 request:
+4 &gt; PUT https://internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com/v1/transversal/administrative/customers/0a913355-8fcb-197f-8190-0d996f920671/subscriptions/0a9133a6-8f4e-17ca-8190-0d9971600301/contacts
+4 &gt; message-uuid: acxff62e-6f12-42de-9012-1e7304418abd
+4 &gt; request-app-id: c4e6bd04-5149-11e7-b114-a2f933d5fe66
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 177
+4 &gt; Host: internal-AWS-PRB-ALB-BACK-398488634.us-east-1.elb.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;contacts&quot;:[{&quot;id&quot;:&quot;zz1f0asa-b22a-11ed-afa1-0242ac120f12&quot;,&quot;name&quot;:&quot;Luis Lopez 02&quot;,&quot;email&quot;:&quot;luis.lopez@mail.com&quot;,&quot;telephoneNumber&quot;:&quot;3003000000&quot;,&quot;contactType&quot;:&quot;Tipo de Contacto&quot;}]}
+
+12:57:59.065 response time in milliseconds: 339
+4 &lt; 200
+4 &lt; Date: Wed, 12 Jun 2024 17:57:59 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;headers&quot;:{&quot;httpStatusCode&quot;:200,&quot;httpStatusDesc&quot;:&quot;OK&quot;,&quot;messageUuid&quot;:&quot;acxff62e-6f12-42de-9012-1e7304418abd&quot;,&quot;requestAppId&quot;:&quot;c4e6bd04-5149-11e7-b114-a2f933d5fe66&quot;,&quot;requestDatetime&quot;:&quot;2024-06-12T12:57:59&quot;},&quot;messageResponse&quot;:{&quot;responseCode&quot;:&quot;0000&quot;,&quot;responseMessage&quot;:&quot;Transacci&oacute;n exitosa.&quot;,&quot;responseDetails&quot;:&quot;Accounts updated on the Subscription successfully&quot;},&quot;data&quot;:{&quot;contacts&quot;:[{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99716c0302&quot;,&quot;name&quot;:&quot;Maria&quot;,&quot;email&quot;:&quot;jj@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;1121212121&quot;,&quot;contactType&quot;:&quot;AB&quot;},{&quot;subscriptionContactId&quot;:&quot;0a9133a6-8f4e-17ca-8190-0d99716c0303&quot;,&quot;name&quot;:&quot;Jose&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;telephoneNumber&quot;:&quot;121212123&quot;,&quot;contactType&quot;:&quot;BE&quot;}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.messageResponse.responseDetails == &quot;Accounts updated on the Subscription successfully&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

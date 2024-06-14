@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[1:7]","start":1717768264646,"end":1717768267409,"title":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[1:7] 08:51:04.646-08:51:07.409 Customers accounts POST"},{"id":2,"group":2,"content":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[2:29]","start":1717768264646,"end":1717768267794,"title":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[2:29] 08:51:04.646-08:51:07.794 Customers accounts GET"},{"id":3,"group":1,"content":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[3:44]","start":1717768267415,"end":1717768269716,"title":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[3:44] 08:51:07.415-08:51:09.716 Customers accounts GET {accountId}"},{"id":4,"group":2,"content":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[4:58]","start":1717768267799,"end":1717768270163,"title":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[4:58] 08:51:07.799-08:51:10.163 Customers accounts PUT {accountId}"},{"id":5,"group":1,"content":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[5:73]","start":1717768269720,"end":1717768271964,"title":"users\/CustomerAccountManagement03\/CustomersCustomerIdAccounts[5:73] 08:51:09.720-08:51:11.964 Customers accounts delete {accountId}"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
