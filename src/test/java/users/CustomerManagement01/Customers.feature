@@ -17,7 +17,7 @@ Feature: Customer
     * def variableRandom = generarData.generarNumero(16)
     When request { "customerName": #(variableRandom),"businessName": #(variableRandom),"customerDocumentNumber": #(variableRandom),"customerDocumentType": "NT","customerCode": #(variableRandom),"regulatedSFC": #(variableRandom),"logo": "","incomes": "80","expenses": "40","assets": "4","passives": "3","equity": "1","customerDomain": [{"domain": "gufum","status": "ACTIVE"}],"customerTypes": [{"customerTypeId": "0a91337e-8c88-1ce7-818c-8d87e2d8003d"}],"customerAddressInformation": {"customerCountry": "CO","customerDepartment": "CUNDINAMARCA","customerProvince": "BOGOTA","customerCity": "BOGOTA","customerAddress": "calle falsa 123"},"customerPhone": {"phoneCode": "57","phoneNumber": "3161002233"},"customerEmail": "fudrayepsu@gufum.com","ciiuCode": {"activity": "Estudios de mercado.","ciiuCode": "7320"},"customerOwners": [{"name": "Juan higuera","documentType": "CC","documentNumber": "123456","relation": "REPRESENTANTE_LEGAL","pep": "SI"}],"termsAndConditionVersion": "","policyVersion": "","financialInstitutionCode": "","entityType": "PUBLIC","eanCode": "","compensationCode": "","limitUse": ""}
     And method POST
-    Then status 200
+    Then status 201
     And match $.messageResponse.responseDetails == "Customer Created Successfully"
     And def capturarVariablecustomerId = $.data.customer.customerId
     And def capturarVariablecustomerTypeId1 = $.data.customerType.customerTypeId
